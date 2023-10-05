@@ -18,6 +18,9 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
+       // public GameObject projectilePrefab;
+
+
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
@@ -42,6 +45,11 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => collider2d.bounds;
 
+        public Projectile projectile;
+        public static int moveDirection = 1;
+
+        public Plataforma plataforma;
+
         void Awake()
         {
             health = GetComponent<Health>();
@@ -49,6 +57,8 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            projectile = GetComponent<Projectile>();
+            plataforma = GetComponent<Plataforma>();
         }
 
         protected override void Update()
@@ -56,12 +66,23 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
+                if (move.x > 0) moveDirection = 1;
+                else if (move.x < 0) moveDirection = -1;
+
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
                     jumpState = JumpState.PrepareToJump;
                 else if (Input.GetButtonUp("Jump"))
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
+                }
+                else if(Input.GetButtonDown("Fire1"))
+                {
+                    projectile.Disparar();
+                }
+                else if(Input.GetButtonDown("Fire2"))
+                {
+                    plataforma.Colocar();
                 }
             }
             else
