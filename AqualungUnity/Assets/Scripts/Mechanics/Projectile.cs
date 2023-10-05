@@ -11,52 +11,36 @@ namespace Platformer.Mechanics
 
         [SerializeField] private float speed;
         [SerializeField] private int damage = 10;
-        [SerializeField] private GameObject projectilePrefab;
-        private GameObject projectile;
-        private int playerDirection;
-        private Vector3 projectileDirection;
-        [SerializeField] private float shotCooldown = 1.5f;
-        private float coolDown;
-        private bool canShoot = true;
+
+        private ProjectilAigua _projectilAigua;
+
+        private Vector3 _direction;
 
         private void Awake()
         {
-            coolDown = shotCooldown;
+            Debug.Log("Bola d'aigua creada");
+            _projectilAigua = FindObjectOfType<ProjectilAigua>();
         }
 
-        public void Disparar()
+        private void Start()
         {
-            if (canShoot)
-            {
-                Vector2 spawnPosition = transform.position;
-                projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
-                playerDirection = PlayerController.moveDirection;
-                //projectileDirection = playerDirection > 0 ? Vector3.right : Vector3.left;
-                projectileDirection = playerDirection > 0 ? new Vector3(1f,.3f,0f) : new Vector3(-1f,.3f,0f);
-                canShoot = false;
-            }
+            _direction = _projectilAigua.ProjectileDirection;
         }
 
         private void Update()
         {
-            if (!canShoot)
+            if (_projectilAigua != null)
             {
-                coolDown -= Time.deltaTime;
-                if (coolDown <= 0)
-                {
-                    canShoot = true;
-                    coolDown = shotCooldown;
-                }
+                transform.position += _direction * Time.deltaTime * speed;
             }
-            if (projectile)
-            {
-                projectile.transform.position += projectileDirection * Time.deltaTime * speed;
-            }
+            /*El problema és que forcem que segueixi en la mateixa direcció, en comptes de canviar, si impacta amb algun objecte.
+             Hem de fer que quan impacti, es destrueixi*/
         }
 
-        private void OnTriggerEnter(Collider other)
+
+            private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Impacte:" + other);
+           // Debug.Log("Impacte:" + other);
 
             /*AudioManager.Instance.PlayClip(impactSound);
 
@@ -71,7 +55,7 @@ namespace Platformer.Mechanics
                 health.TakeDamage(damage);
             }*/
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
