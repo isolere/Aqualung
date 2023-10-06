@@ -18,9 +18,6 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
-       // public GameObject projectilePrefab;
-
-
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
@@ -45,10 +42,11 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => collider2d.bounds;
 
-        public Projectile projectile;
+        private ProjectilAigua _projectilAigua;
         public static int moveDirection = 1;
 
-        public Plataforma plataforma;
+        private Plataforma _plataforma;
+        private Interactor _interactor;
 
         void Awake()
         {
@@ -57,8 +55,9 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
-            projectile = GetComponent<Projectile>();
-            plataforma = GetComponent<Plataforma>();
+            _projectilAigua = GetComponent<ProjectilAigua>();
+            _plataforma = GetComponent<Plataforma>();
+            _interactor = GetComponent<Interactor>();
         }
 
         protected override void Update()
@@ -76,13 +75,19 @@ namespace Platformer.Mechanics
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
                 }
-                else if(Input.GetButtonDown("Fire1"))
+
+                if(Input.GetButtonDown("Fire1"))
                 {
-                    projectile.Disparar();
+                    _projectilAigua.Disparar();
                 }
-                else if(Input.GetButtonDown("Fire2"))
+                if(Input.GetButtonDown("Fire2"))
                 {
-                    plataforma.Colocar();
+                    _plataforma.Colocar();
+                }
+                if (Input.GetButtonDown("Interact"))
+                {
+                    Debug.Log("Interact Activat");
+                    _interactor.Interact();
                 }
             }
             else
