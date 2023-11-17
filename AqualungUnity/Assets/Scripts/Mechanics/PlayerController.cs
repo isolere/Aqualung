@@ -57,7 +57,7 @@ namespace Platformer.Mechanics
             animator = GetComponent<Animator>();
             _projectilAigua = GetComponent<ProjectilAigua>();
             _plataforma = GetComponent<Plataforma>();
-            _interactor = GetComponent<Interactor>();
+            _interactor = GetComponentInChildren<Interactor>();
         }
 
         protected override void Update()
