@@ -38,9 +38,9 @@ namespace Platformer.Mechanics
         }
 
 
-            private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-           // Debug.Log("Impacte:" + other);
+            Debug.Log("Impacte:" + other);
 
             /*AudioManager.Instance.PlayClip(impactSound);
 
@@ -55,7 +55,7 @@ namespace Platformer.Mechanics
                 health.TakeDamage(damage);
             }*/
 
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
