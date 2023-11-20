@@ -41,10 +41,11 @@ namespace Platformer.Mechanics
         private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log("Impacte:" + other);
+            Debug.Log("Prova:" + other);
 
-            /*AudioManager.Instance.PlayClip(impactSound);
+            //AudioManager.Instance.PlayClip(impactSound);
 
-            GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
+            /*GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
             Destroy(FX, 2f);
 
             Health health = other.gameObject.GetComponent<Health>();
