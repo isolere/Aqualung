@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 439
-        y: 1778
+        y: 1732
         width: 1240
-        height: 165
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: LVL2_Tilesheet_25
       rect:
         serializedVersion: 2
-        x: 5614
-        y: 4453
-        width: 875
-        height: 776
+        x: 5767
+        y: 4573
+        width: 635
+        height: 656
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: LVL2_Tilesheet_27
       rect:
         serializedVersion: 2
-        x: 4914
-        y: 4509
-        width: 592
-        height: 678
+        x: 5287
+        y: 4612
+        width: 420
+        height: 488
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: LVL2_Tilesheet_34
       rect:
         serializedVersion: 2
-        x: 110
-        y: 94
-        width: 1952
-        height: 772
+        x: 382
+        y: 325
+        width: 981
+        height: 398
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,10 +869,10 @@ TextureImporter:
       name: LVL2_Tilesheet_15
       rect:
         serializedVersion: 2
-        x: 110
-        y: 94
-        width: 534
-        height: 772
+        x: 392
+        y: 327
+        width: 232
+        height: 398
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: LVL2_Tilesheet_16
       rect:
         serializedVersion: 2
-        x: 644
-        y: 94
-        width: 461
-        height: 772
+        x: 396
+        y: 593
+        width: 88
+        height: 149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +911,10 @@ TextureImporter:
       name: LVL2_Tilesheet_17
       rect:
         serializedVersion: 2
-        x: 1105
-        y: 94
-        width: 486
-        height: 772
+        x: 1231
+        y: 593
+        width: 132
+        height: 155
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: LVL2_Tilesheet_19
       rect:
         serializedVersion: 2
-        x: 1591
-        y: 94
-        width: 471
-        height: 772
+        x: 1065
+        y: 323
+        width: 275
+        height: 399
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1290,9 +1290,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 439
-        y: 1632
+        y: 1587
         width: 1240
-        height: 172
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1311,9 +1311,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 433
-        y: 1373
+        y: 1298
         width: 1275
-        height: 131
+        height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1331,8 +1331,8 @@ TextureImporter:
       name: LVL2_Tilesheet_58
       rect:
         serializedVersion: 2
-        x: 4224
-        y: 5161
+        x: 4757
+        y: 5041
         width: 426
         height: 134
       alignment: 0
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: LVL2_Tilesheet_59
       rect:
         serializedVersion: 2
-        x: 5637
-        y: 4144
-        width: 599
-        height: 271
+        x: 5827
+        y: 4354
+        width: 373
+        height: 207
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1365,6 +1365,69 @@ TextureImporter:
       bones: []
       spriteID: 15d6068ec0fd15f4d97453172ef37182
       internalID: -321805662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_60
+      rect:
+        serializedVersion: 2
+        x: 4276
+        y: 4752
+        width: 328
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c57876af4aee2b4fbf2bc01f9d59470
+      internalID: -1477753250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_61
+      rect:
+        serializedVersion: 2
+        x: 4623
+        y: 4766
+        width: 330
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa6d8fa770d03a45ae96d5780545e37
+      internalID: -1240913707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_62
+      rect:
+        serializedVersion: 2
+        x: 4965
+        y: 4750
+        width: 341
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a13bd2834021f14aa107c0d305f8d2e
+      internalID: 752850535
       vertices: []
       indices: 
       edges: []
@@ -1438,6 +1501,9 @@ TextureImporter:
       LVL2_Tilesheet_59: -321805662
       LVL2_Tilesheet_6: -1693072313
       LVL2_Tilesheet_60: -1477753250
+      LVL2_Tilesheet_61: -1240913707
+      LVL2_Tilesheet_62: 752850535
+      LVL2_Tilesheet_63: 1184856819
       LVL2_Tilesheet_7: -866978449
       LVL2_Tilesheet_8: 416015195
       LVL2_Tilesheet_9: -80260984
