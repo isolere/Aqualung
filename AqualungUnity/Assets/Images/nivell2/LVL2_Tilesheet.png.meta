@@ -890,10 +890,10 @@ TextureImporter:
       name: LVL2_Tilesheet_16
       rect:
         serializedVersion: 2
-        x: 396
-        y: 593
-        width: 88
-        height: 149
+        x: 392
+        y: 582
+        width: 92
+        height: 169
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -913,7 +913,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1231
         y: 593
-        width: 132
+        width: 134
         height: 155
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
