@@ -1,6 +1,8 @@
 ﻿using System;
 using Cinemachine;
 using UnityEngine;
+using Platformer.Gameplay;
+using static Platformer.Core.Simulation;
 
 namespace Platformer.Mechanics
 {
@@ -41,21 +43,25 @@ namespace Platformer.Mechanics
         private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log("Impacte:" + other);
-            Debug.Log("Prova:" + other);
 
             //AudioManager.Instance.PlayClip(impactSound);
 
             /*GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
-            Destroy(FX, 2f);
+            Destroy(FX, 2f);*/
 
             Health health = other.gameObject.GetComponent<Health>();
+            EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
 
             // Si te salut apliquem el mal
-            if (health != null)
+            if (health != null && enemyController != null)
             {
-                health.TakeDamage(damage);
-            }*/
-
+                Debug.Log("fa mal:" + health.currentHP);
+                health.Decrement();
+                if (!health.IsAlive)
+                {
+                    Schedule<EnemyDeath>().enemy = enemyController;
+                }
+            }
             Destroy(gameObject);
         }
     }

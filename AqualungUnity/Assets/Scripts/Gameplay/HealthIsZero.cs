@@ -15,7 +15,14 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            Schedule<PlayerDeath>();
+            if (health.gameObject.CompareTag("Player"))
+            {
+                Schedule<PlayerDeath>();
+            }
+            else if (health.gameObject.CompareTag("Enemic"))
+            {
+                Schedule<EnemyDeath>();
+            }
         }
     }
 }
