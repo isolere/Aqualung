@@ -1310,9 +1310,9 @@ TextureImporter:
       name: LVL2_Tilesheet_57
       rect:
         serializedVersion: 2
-        x: 433
+        x: 413
         y: 1298
-        width: 1275
+        width: 1295
         height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
