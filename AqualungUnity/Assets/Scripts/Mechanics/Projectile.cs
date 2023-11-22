@@ -55,7 +55,6 @@ namespace Platformer.Mechanics
             // Si te salut apliquem el mal
             if (health != null && enemyController != null)
             {
-                Debug.Log("fa mal:" + health.currentHP);
                 health.Decrement();
                 if (!health.IsAlive)
                 {

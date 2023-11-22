@@ -10,6 +10,10 @@ namespace Platformer.Mechanics
     /// </summary>
     public class Health : MonoBehaviour
     {
+        public delegate void OnHealthChangeDelegate(int amount);
+
+        public event OnHealthChangeDelegate OnHealthChanged;
+
         /// <summary>
         /// The maximum hit points for the entity.
         /// </summary>
@@ -20,7 +24,12 @@ namespace Platformer.Mechanics
         /// </summary>
         public bool IsAlive => currentHP > 0;
 
-        public int currentHP;
+        int currentHP;
+
+        public int getCurrentHP
+        {
+            get{ return currentHP; }
+        }
 
         /// <summary>
         /// Increment the HP of the entity.
@@ -28,6 +37,8 @@ namespace Platformer.Mechanics
         public void Increment()
         {
             currentHP = Mathf.Clamp(currentHP + 1, 0, maxHP);
+            if (OnHealthChanged != null) OnHealthChanged(1);
+
         }
 
         /// <summary>
@@ -42,6 +53,7 @@ namespace Platformer.Mechanics
                 var ev = Schedule<HealthIsZero>();
                 ev.health = this;
             }
+            if (OnHealthChanged != null) OnHealthChanged(-1);
         }
 
         /// <summary>
@@ -50,6 +62,11 @@ namespace Platformer.Mechanics
         public void Die()
         {
             while (currentHP > 0) Decrement();
+        }
+
+        public void RestoreLife()
+        {
+            currentHP = maxHP;
         }
 
         void Awake()
