@@ -5,44 +5,24 @@ using System.Collections.Generic;
 
 namespace Platformer.Mechanics
 {
-    public class Plataforma : MonoBehaviour
+    public class Plataforma : Habilitat
     {
-        //[SerializeField] private GameObject impactPrefab;
-        //[SerializeField] private AudioClip impactSound;
-
-        [SerializeField] private GameObject platformPrefab;
-        private GameObject platform;
-        [SerializeField] private float platformCooldown = 1.0f;
-        private float coolDown;
-        private bool canPlace = true;
-
-        private void Awake()
+        public override void UtilitzarHabilitat()
         {
-            coolDown = platformCooldown;
-        }
-
-        public void Colocar()
-        {
-            if (canPlace)
+            if (canUse && checkWaterReserve() == true)
             {
+                _health.Decrement();
                 Vector3 cursorPosition = Input.mousePosition;
                 cursorPosition.z = 1.0f;
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
-                platform = Instantiate(platformPrefab, worldPosition, Quaternion.identity);
-                canPlace = false;
+                item = Instantiate(itemPrefab, worldPosition, Quaternion.identity);
+                canUse = false;
+                Debug.Log("Vida= " + _health.getCurrentHP);
             }
-        }
-
-        private void Update()
-        {
-            if (!canPlace)
+            else
             {
-                coolDown -= Time.deltaTime;
-                if (coolDown <= 0)
-                {
-                    canPlace = true;
-                    coolDown = platformCooldown;
-                }
+                Debug.Log("Vida= " + _health.getCurrentHP);
+                Debug.Log("Reserva d'aigua insuficient");
             }
         }
     }
