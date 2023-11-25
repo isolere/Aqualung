@@ -491,10 +491,10 @@ TextureImporter:
       name: Lvl1_Spritesheet2_18
       rect:
         serializedVersion: 2
-        x: 2681
-        y: 1227
-        width: 5
-        height: 4
+        x: 2824
+        y: 656
+        width: 645
+        height: 556
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,9 +513,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2825
-        y: 654
+        y: 647
         width: 644
-        height: 577
+        height: 584
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1207,7 +1207,7 @@ TextureImporter:
         serializedVersion: 2
         x: 3180
         y: 2119
-        width: 100
+        width: 105
         height: 237
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1315,7 +1315,7 @@ TextureImporter:
         width: 51
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1331,12 +1331,12 @@ TextureImporter:
       name: Lvl1_Spritesheet2_58
       rect:
         serializedVersion: 2
-        x: 3480
-        y: 222
+        x: 3479
+        y: 224
         width: 51
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
