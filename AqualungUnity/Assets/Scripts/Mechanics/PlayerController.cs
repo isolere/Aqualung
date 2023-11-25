@@ -31,7 +31,6 @@ namespace Platformer.Mechanics
         private bool stopJump;
         /*internal new*/ public Collider2D collider2d;
         /*internal new*/ public AudioSource audioSource;
-        public int reservaAigua = 4;
         public bool controlEnabled = true;
 
         bool jump;
@@ -80,31 +79,11 @@ namespace Platformer.Mechanics
 
                 if(Input.GetButtonDown("Fire1"))
                 {
-                    if (checkWaterReserve() == true)
-                    {
-                        health.Decrement();
-                        _projectilAigua.Disparar();
-                        Debug.Log("Vida= " +health.getCurrentHP);
-                    }
-                    else
-                    {
-                        Debug.Log("Vida= " + health.getCurrentHP);
-                        Debug.Log("Reserva d'aigua insuficient");
-                    }
+                    _projectilAigua.UtilitzarHabilitat();
                 }
                 if(Input.GetButtonDown("Fire2"))
                 {
-                    if (checkWaterReserve() == true)
-                    {
-                        health.Decrement();
-                        _plataforma.Colocar();
-                        Debug.Log("Vida= " + health.getCurrentHP);
-                    }
-                    else
-                    {
-                        Debug.Log("Vida= " + health.getCurrentHP);
-                        Debug.Log("Reserva d'aigua insuficient");
-                    }
+                    _plataforma.UtilitzarHabilitat();
                 }
                 if (Input.GetButtonDown("Interact"))
                 {
@@ -118,12 +97,6 @@ namespace Platformer.Mechanics
             }
             UpdateJumpState();
             base.Update();
-        }
-
-        bool checkWaterReserve()
-        {
-            if (health.getCurrentHP <= reservaAigua) return false;
-            else return true;
         }
 
         void UpdateJumpState()

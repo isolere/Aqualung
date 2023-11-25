@@ -4,48 +4,32 @@ using UnityEngine;
 
 namespace Platformer.Mechanics
 {
-    public class ProjectilAigua : MonoBehaviour
+    public class ProjectilAigua : Habilitat
     {
-        [SerializeField] private GameObject projectilePrefab;
-        private GameObject projectile;
         private int playerDirection;
-        private Vector3 projectileDirection;
-        [SerializeField] private float shotCooldown = 1.5f;
-        private float coolDown;
-        private bool canShoot = true;
 
+        private Vector3 projectileDirection;
         public Vector3 ProjectileDirection
         {
             get { return projectileDirection; }
         }
 
-        private void Awake()
+        public override void UtilitzarHabilitat()
         {
-            coolDown = shotCooldown;
-        }
-
-        public void Disparar()
-        {
-            if (canShoot)
+            if (canUse && checkWaterReserve() == true)
             {
+                _health.Decrement();
                 Vector2 spawnPosition = transform.position;
-                projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+                item = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
                 playerDirection = PlayerController.moveDirection;
                 projectileDirection = playerDirection > 0 ? new Vector3(1f,.3f,0f) : new Vector3(-1f,.3f,0f);
-                canShoot = false;
+                canUse = false;
+                Debug.Log("Vida= " + _health.getCurrentHP);
             }
-        }
-
-        private void Update()
-        {
-            if (!canShoot)
+            else
             {
-                coolDown -= Time.deltaTime;
-                if (coolDown <= 0)
-                {
-                    canShoot = true;
-                    coolDown = shotCooldown;
-                }
+                Debug.Log("Vida= " + _health.getCurrentHP);
+                Debug.Log("Reserva d'aigua insuficient");
             }
         }
     }

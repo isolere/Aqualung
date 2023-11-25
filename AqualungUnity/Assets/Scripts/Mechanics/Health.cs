@@ -18,6 +18,7 @@ namespace Platformer.Mechanics
         /// The maximum hit points for the entity.
         /// </summary>
         public int maxHP = 1;
+        public int reservaAigua = 4;
 
         /// <summary>
         /// Indicates if the entity should be considered 'alive'.
@@ -38,9 +39,13 @@ namespace Platformer.Mechanics
         {
             currentHP = Mathf.Clamp(currentHP + 1, 0, maxHP);
             if (OnHealthChanged != null) OnHealthChanged(1);
-
         }
 
+        public void IncrementMultiple(int value)
+        {
+            currentHP = Mathf.Clamp(currentHP + value, 0, maxHP);
+            if (OnHealthChanged != null) OnHealthChanged(value);
+        }
         /// <summary>
         /// Decrement the HP of the entity. Will trigger a HealthIsZero event when
         /// current HP reaches 0.
