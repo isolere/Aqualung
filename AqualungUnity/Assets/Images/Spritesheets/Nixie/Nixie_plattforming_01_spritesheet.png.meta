@@ -115,10 +115,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 105
+        height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 145
         y: 0
-        width: 128
-        height: 128
+        width: 85
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 233
         y: 0
-        width: 128
-        height: 128
+        width: 135
+        height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 368
         y: 0
-        width: 128
-        height: 128
+        width: 127
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 512
+        x: 504
         y: 0
-        width: 128
+        width: 136
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,9 +221,9 @@ TextureImporter:
         x: 640
         y: 0
         width: 128
-        height: 128
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 768
+        x: 742
         y: 0
-        width: 128
-        height: 128
+        width: 148
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: Nixie_plattforming_01_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 896
+        x: 880
         y: 0
-        width: 128
-        height: 128
+        width: 126
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
