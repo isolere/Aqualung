@@ -11,6 +11,13 @@ public class GameState : MonoBehaviour
     public event OnEventDelegate OnAlertStateChange;
 
     private int _score;
+    private int _fragmentsAqualung;
+
+    public int FragmentsAqualung
+    {
+        get { return _fragmentsAqualung; }
+        set { _fragmentsAqualung=value; }
+    }
 
     private static GameState _instance;
 

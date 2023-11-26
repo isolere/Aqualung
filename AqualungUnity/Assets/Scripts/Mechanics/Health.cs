@@ -25,11 +25,15 @@ namespace Platformer.Mechanics
         /// </summary>
         public bool IsAlive => currentHP > 0;
 
-        int currentHP;
+        private int currentHP;
 
         public int getCurrentHP
         {
             get{ return currentHP; }
+        }
+        public int setCurrentHP
+        {
+            set { currentHP = value; }
         }
 
         /// <summary>

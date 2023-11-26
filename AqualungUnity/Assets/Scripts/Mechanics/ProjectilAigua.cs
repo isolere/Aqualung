@@ -26,11 +26,6 @@ namespace Platformer.Mechanics
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);
             }
-            else
-            {
-                Debug.Log("Vida= " + _health.getCurrentHP);
-                Debug.Log("Reserva d'aigua insuficient");
-            }
         }
     }
 }
