@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: b356800cd40e7194dbbb3dcb09e08909
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_0
+      rect:
+        serializedVersion: 2
+        x: 3052
+        y: 1325
+        width: 582
+        height: 417
+      alignment: 9
+      pivot: {x: 0.018635647, y: 0.61362374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006822869dbd1fd43aed260365b74e15
+      internalID: -1906010440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_1
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1499
+        width: 385
+        height: 241
+      alignment: 9
+      pivot: {x: 0.119256034, y: 0.75419194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aa414e009698947b2e8b9bd247c72e
+      internalID: 1925664032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_2
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1633
+        width: 829
+        height: 349
+      alignment: 9
+      pivot: {x: 0.9678918, y: 0.5504864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32d57a33df1ca74cb4c801445cba2d4
+      internalID: 1384989577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_3
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1209
+        width: 918
+        height: 221
+      alignment: 9
+      pivot: {x: 0.9480914, y: 0.8377652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadbc77432a9e7f4baea11a2e440c90d
+      internalID: 2067693856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_4
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1187
+        width: 576
+        height: 81
+      alignment: 9
+      pivot: {x: 0.06592856, y: 0.5683579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a45fe653a15c64a987dc4721d42803
+      internalID: 1051759833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_5
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1707
+        width: 356
+        height: 139
+      alignment: 9
+      pivot: {x: 0.95160633, y: 0.212513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec748b54fcb8144487e697c4470e9c2
+      internalID: 1979765398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_6
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1344
+        width: 452
+        height: 284
+      alignment: 9
+      pivot: {x: 0.95662737, y: 0.8880665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebed648c5e6973e4ba667e872e26420a
+      internalID: 2025327166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_7
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 985
+        width: 543
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f20daf8f463544ca819eab1e48f13c
+      internalID: 549239714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_8
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 913
+        width: 606
+        height: 231
+      alignment: 9
+      pivot: {x: 0.046208885, y: 0.32856017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7249d5caffb388429eb361a26067535
+      internalID: 728019972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_9
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 931
+        width: 351
+        height: 219
+      alignment: 9
+      pivot: {x: 0.13382037, y: 0.803226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e917ac6fb0a2a447b608412c288ff3a
+      internalID: -1208851825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lvl1_SpritesheeCanonades_0: -1906010440
+      Lvl1_SpritesheeCanonades_1: 1925664032
+      Lvl1_SpritesheeCanonades_2: 1384989577
+      Lvl1_SpritesheeCanonades_3: 2067693856
+      Lvl1_SpritesheeCanonades_4: 1051759833
+      Lvl1_SpritesheeCanonades_5: 1979765398
+      Lvl1_SpritesheeCanonades_6: 2025327166
+      Lvl1_SpritesheeCanonades_7: 549239714
+      Lvl1_SpritesheeCanonades_8: 728019972
+      Lvl1_SpritesheeCanonades_9: -1208851825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
