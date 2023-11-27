@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 940416572823398663}
   - component: {fileID: 7934555719971438712}
   - component: {fileID: 443078905631752056}
-  - component: {fileID: 5665444784001912680}
   - component: {fileID: 1303866117675938711}
   - component: {fileID: 6427038468032513134}
   - component: {fileID: 2056900921986645296}
@@ -441,19 +440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 10
   reservaAigua: 3
---- !u!114 &5665444784001912680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936573978472361314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Id: 2cedde77-9eec-414f-a172-5c4b3c8e2891
 --- !u!114 &1303866117675938711
 MonoBehaviour:
   m_ObjectHideFlags: 0
