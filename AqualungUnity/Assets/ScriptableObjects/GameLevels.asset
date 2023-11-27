@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: GameLevels
   m_EditorClassIdentifier: 
   levels:
+  - {fileID: 11400000, guid: 24b733684eb02cf40a1a54c57ae6592a, type: 2}
   - {fileID: 11400000, guid: 2d307dfd7ad718b41b26071d2b782a3b, type: 2}
   timeBeforeStartLevel: 3

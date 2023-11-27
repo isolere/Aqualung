@@ -31,6 +31,11 @@ public class LevelManager : MonoBehaviour
     {
         return _currentLevelConfig.levelTitle;
     }
+    
+    public String GetCurrentLevelMission()
+    {
+        return _currentLevelConfig.levelMission;
+    }
 
     public void EndLevel()
     {

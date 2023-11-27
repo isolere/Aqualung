@@ -21,6 +21,8 @@ namespace Platformer.Mechanics
         public void IncrementaReservaAigua()
         {
             _health.IncrementMultiple(quantitatAigua);
+            GameState.Instance.IncreaseScore(1);
+
         }
 
         private void Update()
