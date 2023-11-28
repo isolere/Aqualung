@@ -340,6 +340,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Lvl1_SpritesheeCanonades_11
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1367
+        width: 172
+        height: 50
+      alignment: 9
+      pivot: {x: 0.16350937, y: 0.56758165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e194e5b2c6f28043bc921bdd295337e
+      internalID: -1751317416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -354,6 +375,7 @@ TextureImporter:
       Lvl1_SpritesheeCanonades_0: -1906010440
       Lvl1_SpritesheeCanonades_1: 1925664032
       Lvl1_SpritesheeCanonades_10: 1052263544
+      Lvl1_SpritesheeCanonades_11: -1751317416
       Lvl1_SpritesheeCanonades_2: 1384989577
       Lvl1_SpritesheeCanonades_3: 2067693856
       Lvl1_SpritesheeCanonades_4: 1051759833
