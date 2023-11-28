@@ -14,6 +14,10 @@ namespace Platformer.Mechanics
 
         public event OnHealthChangeDelegate OnHealthChanged;
 
+        public delegate void OnEnemyDeathDelegate();
+
+        public event OnEnemyDeathDelegate OnEnemyDeath;
+
         /// <summary>
         /// The maximum hit points for the entity.
         /// </summary>
@@ -61,6 +65,8 @@ namespace Platformer.Mechanics
             {
                 var ev = Schedule<HealthIsZero>();
                 ev.health = this;
+                if (OnEnemyDeath != null && gameObject.CompareTag("Enemic")) OnEnemyDeath();
+
             }
             if (OnHealthChanged != null) OnHealthChanged(-1);
         }
