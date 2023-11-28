@@ -102,8 +102,8 @@ public class AIController : MonoBehaviour
                 break;
 
             case AIState.Following:
-                /*Vector2 direction = (_target.transform.position - transform.position).normalized;
-                _rigidbody.velocity = direction * moveSpeed;*/
+                Vector2 direction = (_target.transform.position - transform.position).normalized;
+                _rigidbody.velocity = direction * moveSpeed;
                 break;
         }
     }
