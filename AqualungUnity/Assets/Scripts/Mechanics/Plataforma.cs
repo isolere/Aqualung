@@ -11,7 +11,10 @@ namespace Platformer.Mechanics
         {
             if (canUse && checkWaterReserve() == true)
             {
-                _health.Decrement();
+                if (_inventory.Has("Amulet") == false)
+                {
+                    _health.Decrement();
+                }
                 Vector3 cursorPosition = Input.mousePosition;
                 cursorPosition.z = 1.0f;
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);

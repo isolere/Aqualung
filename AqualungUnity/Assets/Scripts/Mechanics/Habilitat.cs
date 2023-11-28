@@ -17,18 +17,25 @@ namespace Platformer.Mechanics
         protected bool canUse = true;
 
         protected Health _health;
+        protected Inventory _inventory;
+
 
         private void Awake()
         {
             _health = GetComponent<Health>();
             coolDown = itemCooldown;
+            _inventory = FindObjectOfType<Inventory>();
+
         }
 
         public virtual void UtilitzarHabilitat()
         {
             if (canUse && checkWaterReserve()==true)
             {
-                _health.Decrement();
+                if (_inventory.Has("Amulet") == false)
+                {
+                    _health.Decrement();
+                }
                 item = Instantiate(itemPrefab, transform.position, Quaternion.identity);
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);

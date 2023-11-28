@@ -18,7 +18,10 @@ namespace Platformer.Mechanics
         {
             if (canUse && checkWaterReserve() == true)
             {
-                _health.Decrement();
+                if (_inventory.Has("Amulet") == false)
+                {
+                    _health.Decrement();
+                }
                 Vector2 spawnPosition = transform.position;
                 item = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
                 playerDirection = PlayerController.moveDirection;
