@@ -5,12 +5,13 @@ public class ApagaDialeg : MonoBehaviour
 {
     public float desactivationTime = 10f;
     public float moveDuration = 2f;
-    public Transform targetPosition;
     public string animationName="AnimacioAmulet";
 
     private Inventory _inventory;
     [SerializeField] private GameObject _prefabAmulet;
     [SerializeField] private GameObject _amuletUI;
+    [SerializeField] private ParticleSystem _explosio;
+
 
     void Awake()
     {
@@ -39,29 +40,15 @@ public class ApagaDialeg : MonoBehaviour
             if (animation != null && !string.IsNullOrEmpty(animationName))
             {
                 animation.Play(animationName);
-                Invoke("MoveObjectAfterAnimation", animation[animationName].length);
+                Invoke("ActivaAmuletUI", animation[animationName].length);
             }
         }
     }
 
-    void MoveObjectAfterAnimation()
+    void ActivaAmuletUI()
     {
-        StartCoroutine(MoveToObject(_prefabAmulet.transform, targetPosition.position, moveDuration));
         _amuletUI.SetActive(true);
-    }
-
-    IEnumerator MoveToObject(Transform objTransform, Vector3 target, float duration)
-    {
-        Debug.Log("Invoca");
-
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
-        {
-            objTransform.position = Vector3.Lerp(objTransform.position, target, elapsedTime / duration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-        objTransform.position = target;
+        _prefabAmulet.SetActive(false);
+        _explosio.Play();
     }
 }
