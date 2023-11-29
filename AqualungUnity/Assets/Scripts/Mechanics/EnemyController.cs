@@ -23,12 +23,19 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
+        public float distanciaDeteccio;
+        public float distanciaAtac;
+        private Transform _player;
+        private Animator _animator;
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
+            _animator = GetComponent<Animator>();
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -44,12 +51,32 @@ namespace Platformer.Mechanics
 
         void Update()
         {
+            float distanceFromPlayer = Vector2.Distance(_player.position, transform.position);
+
             if (path != null)
             {
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
             }
+
+            if (distanceFromPlayer < distanciaDeteccio)
+            {
+                //transform.position = Vector2.MoveTowards(this.transform.position, _player.position, speed * Time.deltaTime);
+                control.move.x = Mathf.Clamp(_player.position.x - transform.position.x, -1, 1);
+            }
+
+            if (distanceFromPlayer < distanciaAtac)
+            {
+                _animator.SetTrigger("Attacking");
+            }
         }
 
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, distanciaDeteccio);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, distanciaAtac);
+        }
     }
 }
