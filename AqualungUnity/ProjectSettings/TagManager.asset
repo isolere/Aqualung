@@ -18,9 +18,9 @@ TagManager:
   - Level
   - Projectil
   - Enemic
-  - 
-  - 
-  - 
+  - EnemyReach
+  - Player
+  - ProjectilEnemic
   - 
   - 
   - 
