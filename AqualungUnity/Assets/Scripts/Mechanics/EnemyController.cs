@@ -25,8 +25,21 @@ namespace Platformer.Mechanics
 
         public float distanciaDeteccio;
         public float distanciaAtac;
-        private Transform _player;
+        private GameObject _player;
         private Animator _animator;
+
+        [SerializeField] private float _cooldown=1f;
+        private float _lastAttack;
+
+        [SerializeField] private GameObject _projectilePrefab;
+        private GameObject projectile;
+
+        private int moveDirection;
+        private Vector3 _projectileDirection;
+        public Vector3 ProjectileDirection
+        {
+            get { return _projectileDirection; }
+        }
 
         void Awake()
         {
@@ -34,7 +47,7 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            _player = GameObject.FindGameObjectWithTag("Player").transform;
+            _player = GameObject.FindGameObjectWithTag("Player");
             _animator = GetComponent<Animator>();
         }
 
@@ -51,7 +64,7 @@ namespace Platformer.Mechanics
 
         void Update()
         {
-            float distanceFromPlayer = Vector2.Distance(_player.position, transform.position);
+            float distanceFromPlayer = Vector2.Distance(_player.transform.position, transform.position);
 
             if (path != null)
             {
@@ -61,13 +74,20 @@ namespace Platformer.Mechanics
 
             if (distanceFromPlayer < distanciaDeteccio)
             {
-                //transform.position = Vector2.MoveTowards(this.transform.position, _player.position, speed * Time.deltaTime);
-                control.move.x = Mathf.Clamp(_player.position.x - transform.position.x, -1, 1);
+                if (distanceFromPlayer > distanciaAtac)
+                {
+                    control.move.x = Mathf.Clamp(_player.transform.position.x - transform.position.x, -1, 1);
+                }
+                else
+                {
+                    control.move.x = 0;
+                }
             }
 
-            if (distanceFromPlayer < distanciaAtac)
+            if (distanceFromPlayer <= distanciaAtac && Time.time - _lastAttack > _cooldown)
             {
                 _animator.SetTrigger("Attacking");
+                _lastAttack = Time.time;
             }
         }
 
@@ -78,5 +98,34 @@ namespace Platformer.Mechanics
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, distanciaAtac);
         }
+
+        public void OnAnimationConnect()
+        {
+            var health = _player.GetComponent<Health>();
+            health.Decrement();
+        }
+
+        public void OnAnimationThrow()
+        {
+            Vector2 spawnPosition = transform.position;
+            projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
+            CheckDirection();
+            _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
+        }
+
+        private void CheckDirection()
+        {
+            Vector3 forwardDirection = transform.forward;
+
+            if (forwardDirection.x > 0)
+            {
+                moveDirection = 1;
+            }
+            else if (forwardDirection.x < 0)
+            {
+                moveDirection = -1;
+            }
+        }
+
     }
 }

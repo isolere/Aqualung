@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 2651140156555518892}
   - component: {fileID: 772289407653213039}
   - component: {fileID: 5843668731025413174}
-  m_Layer: 13
+  - component: {fileID: -5832519942673896269}
+  m_Layer: 9
   m_Name: EnemyVirus
-  m_TagString: Player
+  m_TagString: Enemic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +189,7 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  maxSpeed: 7
+  maxSpeed: 5
   jumpTakeOffSpeed: 7
   move: {x: 0, y: 0}
   jump: 0
@@ -207,6 +208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  distanciaDeteccio: 3
+  distanciaAtac: 0.65
+  _cooldown: 1.5
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -303,3 +307,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5832519942673896269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661912868639658944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffad43bb006db4856a9c527b89b48db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 2
+  reservaAigua: 0

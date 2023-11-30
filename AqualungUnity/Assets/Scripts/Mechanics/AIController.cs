@@ -1,11 +1,12 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.AI;
 using Platformer.Mechanics;
 
 /**
  * Controlador general per la IA
  */
-[RequireComponent(typeof(Health))]
+
+/*[RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Animator))]
 public class AIController : MonoBehaviour
 {
@@ -30,8 +31,8 @@ public class AIController : MonoBehaviour
 
     private GameObject _target;
 
-    /*private static readonly int _animIDSpeed = Animator.StringToHash("Speed");
-    private static readonly int _animIDDead = Animator.StringToHash("Dead");*/
+    //private static readonly int _animIDSpeed = Animator.StringToHash("Speed");
+    //private static readonly int _animIDDead = Animator.StringToHash("Dead");
 
     private Health _health;
     private Rigidbody2D _rigidbody;
@@ -52,7 +53,7 @@ public class AIController : MonoBehaviour
 
         detectionCollider.GetComponent<TestTrigger>().OnTargetEnter += Alert;
 
-        _health.OnEnemyDeath += ProcessDeath;
+        //_health.OnEnemyDeath += ProcessDeath;
     }
 
     private void ProcessDeath()
@@ -139,4 +140,4 @@ public class AIController : MonoBehaviour
             GameState.Instance.IncreaseAlert();
         }
     }
-}
+}*/

@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 6053461811830578381}
   - component: {fileID: 8321475610575873066}
   - component: {fileID: 5372709737608607010}
-  - component: {fileID: 8225977791496598444}
   m_Layer: 9
   m_Name: EnemyFollow
   m_TagString: Enemic
@@ -192,7 +191,7 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  maxSpeed: 7
+  maxSpeed: 5
   jumpTakeOffSpeed: 7
   move: {x: 0, y: 0}
   jump: 0
@@ -211,6 +210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  distanciaDeteccio: 3
+  distanciaAtac: 0.65
+  _cooldown: 1.5
 --- !u!82 &8321475610575873066
 AudioSource:
   m_ObjectHideFlags: 0
@@ -320,23 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 2
-  reservaAigua: 4
---- !u!114 &8225977791496598444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984270816468724299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e914c5dddac250945bd9789f91176210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnSpeed: 5
-  reachCollider: {fileID: 688196706474746256}
-  detectionCollider: {fileID: 4610022808883035887}
-  moveSpeed: 5
+  reservaAigua: 0
 --- !u!1 &6325546781136678134
 GameObject:
   m_ObjectHideFlags: 0

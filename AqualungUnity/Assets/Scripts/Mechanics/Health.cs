@@ -14,10 +14,6 @@ namespace Platformer.Mechanics
 
         public event OnHealthChangeDelegate OnHealthChanged;
 
-        public delegate void OnEnemyDeathDelegate();
-
-        public event OnEnemyDeathDelegate OnEnemyDeath;
-
         /// <summary>
         /// The maximum hit points for the entity.
         /// </summary>
@@ -40,6 +36,8 @@ namespace Platformer.Mechanics
             set { currentHP = value; }
         }
 
+        private bool _isAlreadyDead=false;
+
         /// <summary>
         /// Increment the HP of the entity.
         /// </summary>
@@ -60,15 +58,17 @@ namespace Platformer.Mechanics
         /// </summary>
         public void Decrement()
         {
-            currentHP = Mathf.Clamp(currentHP - 1, 0, maxHP);
-            if (currentHP == 0)
+            if (_isAlreadyDead == false)
             {
-                var ev = Schedule<HealthIsZero>();
-                ev.health = this;
-                if (OnEnemyDeath != null && gameObject.CompareTag("Enemic")) OnEnemyDeath();
-
+                currentHP = Mathf.Clamp(currentHP - 1, 0, maxHP);
+                if (currentHP == 0)
+                {
+                    _isAlreadyDead = true;
+                    var ev = Schedule<HealthIsZero>();
+                    ev.health = this;
+                }
+                if (OnHealthChanged != null) OnHealthChanged(-1);
             }
-            if (OnHealthChanged != null) OnHealthChanged(-1);
         }
 
         /// <summary>
@@ -82,6 +82,7 @@ namespace Platformer.Mechanics
         public void RestoreLife()
         {
             currentHP = maxHP;
+            _isAlreadyDead=false;
         }
 
         void Awake()
