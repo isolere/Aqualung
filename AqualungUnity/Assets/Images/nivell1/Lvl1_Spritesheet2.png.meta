@@ -597,11 +597,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3348
+<<<<<<< Updated upstream
         y: 97
         width: 121
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+=======
+        y: 108
+        width: 220
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4929643, y: 0.007682085}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1811,6 +1819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Lvl1_Spritesheet2_81
       rect:
         serializedVersion: 2
@@ -1820,11 +1829,23 @@ TextureImporter:
         height: 97
       alignment: 9
       pivot: {x: 0.73719096, y: 0.7261032}
+=======
+      name: Lvl1_Spritesheet2_4
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 216
+        width: 181
+        height: 77
+      alignment: 9
+      pivot: {x: 0.50663817, y: 0.016524771}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 3a002f45bcc7405459ad9f20102fc62a
       internalID: 102516724
       vertices: []
@@ -1890,6 +1911,10 @@ TextureImporter:
       bones: []
       spriteID: 3375979be56b90c4c9245b005f17fde4
       internalID: 148535520
+=======
+      spriteID: c6d555971449f10428d5de77df12d4ad
+      internalID: 2071044924
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
