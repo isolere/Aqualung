@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * Gestor de so i pistes de música. Inclou sistema de crossfade per fer l'intercanvi de pistes
@@ -28,6 +29,11 @@ public class AudioManager : MonoBehaviour
     private AudioSource _audioSource2;
     private AudioSource _audioSourceCurrent;
 
+
+    // Variables públiques per als Sliders de música i efectes
+    public Slider sliderMusic;
+    public Slider sliderEffects;
+
     public static AudioManager Instance
     {
         get { return _instance; }
@@ -55,6 +61,9 @@ public class AudioManager : MonoBehaviour
 
             DontDestroyOnLoad(gameObject);
         }
+
+        // funció per iniciar els volums
+        InitializeVolume();
     }
 
     private void Start()
@@ -63,6 +72,15 @@ public class AudioManager : MonoBehaviour
         GameState.Instance.OnAlertStateChange += CheckAlert;
     }
 
+    // Funció per a inicialitzar els volums de música i efectes
+    private void InitializeVolume()
+    {
+        musicVolume = PlayerPrefs.GetFloat("musicVolume", 1.0f);
+        hoverVolume = PlayerPrefs.GetFloat("effectsVolume", 1.0f);
+
+        sliderMusic.value = musicVolume;
+        sliderEffects.value = hoverVolume;
+    }
 
     public void PlayTrack(AudioClip clip)
     {
@@ -177,5 +195,28 @@ public class AudioManager : MonoBehaviour
     public void PlayVictoryClip()
     {
         PlayClip(VictoryClip);
+    }
+
+
+    // Mètode per modificar el volum de la música
+
+    public void OnMusicVolumeUpdate()
+    {
+        musicVolume = sliderMusic.value;
+
+        // Per desar els valor
+        PlayerPrefs.SetFloat("musicVolume", musicVolume);
+        PlayerPrefs.Save();
+    }
+
+    // Mètode per modificar el volum dels efectes de so
+
+    public void OnEffectsVolumeUpdate()
+    {
+        hoverVolume = sliderEffects.value;
+
+        // Desar els valors
+        PlayerPrefs.SetFloat("effectsVolume", hoverVolume);
+        PlayerPrefs.Save();
     }
 }
