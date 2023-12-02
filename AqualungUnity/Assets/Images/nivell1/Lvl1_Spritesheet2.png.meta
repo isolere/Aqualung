@@ -576,9 +576,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3348
-        y: 97
-        width: 121
-        height: 64
+        y: 108
+        width: 220
+        height: 116
       alignment: 9
       pivot: {x: 0.4929643, y: 0.007682085}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,6 +777,27 @@ TextureImporter:
       bones: []
       spriteID: 73ddc3c9a3b01f841ad26ca36302aa1c
       internalID: -467727654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl1_Spritesheet2_4
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 216
+        width: 181
+        height: 77
+      alignment: 9
+      pivot: {x: 0.50663817, y: 0.016524771}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d555971449f10428d5de77df12d4ad
+      internalID: 2071044924
       vertices: []
       indices: 
       edges: []
