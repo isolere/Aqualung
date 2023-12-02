@@ -408,6 +408,16 @@ PrefabInstance:
       propertyPath: m_text
       value: Prem <E> per Reparar
       objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
       propertyPath: m_text
@@ -416,12 +426,12 @@ PrefabInstance:
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
       propertyPath: m_fontSize
-      value: 46
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 46
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
