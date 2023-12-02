@@ -12,7 +12,7 @@ public class Interactable : MonoBehaviour
     public UnityEvent OnInteract;
     public UnityEvent OnRequirementFail;
 
-   // [SerializeField] private List<RequirementSO> requirements;
+    [SerializeField] private List<RequirementSO> requirements;
 
     public void Select(GameObject selector)
     {
@@ -29,7 +29,7 @@ public class Interactable : MonoBehaviour
 
     public bool Interact(GameObject interactor)
     {
-        /*if (ValidateRequirements(interactor))
+        if (ValidateRequirements(interactor))
          {
              OnInteract.Invoke();
              return true;
@@ -38,12 +38,12 @@ public class Interactable : MonoBehaviour
          {
              OnRequirementFail.Invoke();
              return false;
-         }*/
+         }
         OnInteract.Invoke();
         return true;
     }
 
-    /*private bool ValidateRequirements(GameObject gameObject)
+    private bool ValidateRequirements(GameObject gameObject)
     {
         foreach (RequirementSO requirement in requirements)
         {
@@ -55,5 +55,5 @@ public class Interactable : MonoBehaviour
         }
 
         return true;
-    }*/
+    }
 }

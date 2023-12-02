@@ -89,6 +89,9 @@ namespace Platformer.Mechanics
                 _animator.SetTrigger("Attacking");
                 _lastAttack = Time.time;
             }
+            /*CheckDirection();
+            _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
+            Debug.Log("Projectile Direction: " + _projectileDirection);*/
         }
 
         private void OnDrawGizmosSelected()
@@ -115,15 +118,22 @@ namespace Platformer.Mechanics
 
         private void CheckDirection()
         {
-            Vector3 forwardDirection = transform.forward;
+            //Vector3 forwardDirection = transform.right;
 
-            if (forwardDirection.x > 0)
+            if (control.spriteRenderer.flipX == false)
             {
+                Debug.Log("Dreta");
                 moveDirection = 1;
             }
-            else if (forwardDirection.x < 0)
+            else if (control.spriteRenderer.flipX == true)
             {
+                Debug.Log("Esquerra");
                 moveDirection = -1;
+            }
+            else
+            {
+                Debug.Log("cap");
+
             }
         }
 

@@ -25,6 +25,7 @@ namespace Platformer.Mechanics
         private void Start()
         {
             _direction = _enemyController.ProjectileDirection;
+            Debug.Log("Direction: " + _direction);
         }
 
         private void Update()
