@@ -11,7 +11,6 @@ public class RequirementPalancaSO : RequirementSO
     {
         if(GameState.Instance.CanonadesReparades>=_canonadesOK)
         {
-            Debug.Log("Es compleix");
             return true;
         }
         else
@@ -22,6 +21,6 @@ public class RequirementPalancaSO : RequirementSO
 
     public override string GetErrorMessage()
     {
-        return $"Ncessites reparar {_canonadesOK} canonades per poder activar el mecanisme!";
+        return $"Ncessites reparar {_canonadesOK} canonades per poder activar el mecanisme! ({GameState.Instance.CanonadesReparades} de {_canonadesOK})";
     }
 }
