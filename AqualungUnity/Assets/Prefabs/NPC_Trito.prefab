@@ -237,7 +237,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1885635467, guid: ad6f15fe3bc15824e8c85a17b858fe6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -342,6 +342,7 @@ MonoBehaviour:
   OnRequirementFail:
     m_PersistentCalls:
       m_Calls: []
+  requirements: []
 --- !u!70 &1890093818103756132
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

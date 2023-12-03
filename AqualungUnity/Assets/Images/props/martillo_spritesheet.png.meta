@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: martillo_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 18
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4174468503e748e46afa7feddf17f927
+      internalID: 1031439335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 15
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80affc0c891f41040a70444e49c8fe7b
+      internalID: 1154319300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 15
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9645d6406ff3c49b0fba0209862e00
+      internalID: 1517806303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 14
+        width: 42
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43926e2200b09f3458975cbb835429d0
+      internalID: -1647114203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 14
+        width: 33
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6c14d23071bf449e4785a5449fd85
+      internalID: 583313014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 14
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0def29f60dc5bb42a670da1088a911a
+      internalID: 1370603079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 14
+        width: 79
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8d16285906c87489e18725f0fbad09
+      internalID: 1515999815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 17
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a032ca345e3ea42a555c2695408ba1
+      internalID: 197571750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 15
+        width: 79
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368ee01f561c8c24e8f9ed081cc8c5bb
+      internalID: -904926299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 12
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484468d1daf7eee49bc126e469ad9fc0
+      internalID: -359490598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 13
+        width: 33
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c957596fce2146d488d47ab5e8e6a4f2
+      internalID: 562709862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 10
+        width: 42
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3a4932c8b1eb740b76550ef549a39f
+      internalID: 918837485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 14
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b1a4fce2c3c6d4cb3a95f39de84269
+      internalID: 493522659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: martillo_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 14
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291da04bc170c3a449ed8079f9144a68
+      internalID: 788182525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +413,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      martillo_spritesheet_0: 1031439335
+      martillo_spritesheet_1: 1154319300
+      martillo_spritesheet_10: 562709862
+      martillo_spritesheet_11: 918837485
+      martillo_spritesheet_12: 493522659
+      martillo_spritesheet_13: 788182525
+      martillo_spritesheet_2: 1517806303
+      martillo_spritesheet_3: -1647114203
+      martillo_spritesheet_4: 583313014
+      martillo_spritesheet_5: 1370603079
+      martillo_spritesheet_6: 1515999815
+      martillo_spritesheet_7: 197571750
+      martillo_spritesheet_8: -904926299
+      martillo_spritesheet_9: -359490598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
