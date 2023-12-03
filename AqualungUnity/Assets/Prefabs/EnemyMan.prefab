@@ -16,9 +16,16 @@ GameObject:
   - component: {fileID: 2651140156555518892}
   - component: {fileID: 772289407653213039}
   - component: {fileID: 5843668731025413174}
+<<<<<<< HEAD
   m_Layer: 13
   m_Name: EnemyMan
   m_TagString: Player
+=======
+  - component: {fileID: -1153350640022412425}
+  m_Layer: 9
+  m_Name: EnemyMan
+  m_TagString: Enemic
+>>>>>>> main
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,8 +177,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11}
-  m_Size: {x: 0.45, y: 0.09}
+  m_Offset: {x: -0.09719944, y: -0.23789385}
+  m_Size: {x: 0.46023178, y: 0.8763129}
   m_Direction: 0
 --- !u!114 &2651140156555518892
 MonoBehaviour:
@@ -188,7 +195,7 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  maxSpeed: 7
+  maxSpeed: 4
   jumpTakeOffSpeed: 7
   move: {x: 0, y: 0}
   jump: 0
@@ -207,6 +214,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  distanciaDeteccio: 4
+  distanciaAtac: 2
+  _cooldown: 1.5
+  _projectilePrefab: {fileID: 7232365690509895181, guid: 48856d47dc93ef3428f2218b2bc68980,
+    type: 3}
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -303,3 +315,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-1153350640022412425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661912868639658944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffad43bb006db4856a9c527b89b48db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 2
+  reservaAigua: 0

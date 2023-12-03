@@ -18,18 +18,16 @@ namespace Platformer.Mechanics
         {
             if (canUse && checkWaterReserve() == true)
             {
-                _health.Decrement();
+                if (_inventory.Has("Amulet") == false)
+                {
+                    _health.Decrement();
+                }
                 Vector2 spawnPosition = transform.position;
                 item = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
                 playerDirection = PlayerController.moveDirection;
                 projectileDirection = playerDirection > 0 ? new Vector3(1f,.3f,0f) : new Vector3(-1f,.3f,0f);
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);
-            }
-            else
-            {
-                Debug.Log("Vida= " + _health.getCurrentHP);
-                Debug.Log("Reserva d'aigua insuficient");
             }
         }
     }

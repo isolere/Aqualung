@@ -11,8 +11,14 @@ public class UIDisplay : MonoBehaviour
     [Header("Player Stats")] 
 
     [SerializeField] private Slider healthSlider;
+<<<<<<< HEAD
     [SerializeField] private Slider reservaAigua;
     [SerializeField] private Slider marquesReserva;
+=======
+    [SerializeField] private Slider healthSliderUnFrag;
+    [SerializeField] private Slider healthSliderDosFrag;
+    [SerializeField] private Slider reservaAigua;
+>>>>>>> main
 
     [SerializeField] private Health _health;
     [SerializeField] private TextMeshProUGUI scoreText;
@@ -34,9 +40,17 @@ public class UIDisplay : MonoBehaviour
         levelText.text = _levelManager.GetCurrentLevelTitle();
         missionText.text = _levelManager.GetCurrentLevelMission();
 
+<<<<<<< HEAD
         healthSlider.maxValue = _health.maxHP;
         healthSlider.value = healthSlider.maxValue;
 
+=======
+        SetHealthBar();
+
+       /* healthSlider.maxValue = _health.maxHP;
+        healthSlider.value = healthSlider.maxValue;*/
+
+>>>>>>> main
         reservaAigua.maxValue = _health.maxHP;
         reservaAigua.value = _health.reservaAigua;
         
@@ -45,11 +59,39 @@ public class UIDisplay : MonoBehaviour
         _health.OnHealthChanged += UpdateHealth;
     }
 
+    public void SetHealthBar()
+    {
+        if (GameState.Instance.FragmentsAqualung == 1)
+        {
+            healthSlider.gameObject.SetActive(false);
+            healthSliderUnFrag.gameObject.SetActive(true);
+            healthSlider = healthSliderUnFrag;
+        }
+        else if (GameState.Instance.FragmentsAqualung == 2)
+        {
+            healthSlider.gameObject.SetActive(false);
+            healthSliderDosFrag.gameObject.SetActive(true);
+            healthSlider = healthSliderDosFrag;
+        }
+
+        healthSlider.maxValue = _health.maxHP;
+        healthSlider.value = healthSlider.maxValue;
+    }
+
     void UpdateHealth(int amount)
     {
         int newHealth = _health.getCurrentHP;
 
         healthSlider.value = newHealth;
+
+        if(newHealth<_health.reservaAigua)
+        {
+            reservaAigua.value = newHealth;
+        }
+        else
+        {
+            reservaAigua.value = _health.reservaAigua;
+        }
 
         /*if (amount < 0)
         {

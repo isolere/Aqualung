@@ -23,12 +23,32 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
+        public float distanciaDeteccio;
+        public float distanciaAtac;
+        private GameObject _player;
+        private Animator _animator;
+
+        [SerializeField] private float _cooldown=1f;
+        private float _lastAttack;
+
+        [SerializeField] private GameObject _projectilePrefab;
+        private GameObject projectile;
+
+        private int moveDirection;
+        private Vector3 _projectileDirection;
+        public Vector3 ProjectileDirection
+        {
+            get { return _projectileDirection; }
+        }
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            _player = GameObject.FindGameObjectWithTag("Player");
+            _animator = GetComponent<Animator>();
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -44,10 +64,76 @@ namespace Platformer.Mechanics
 
         void Update()
         {
+            float distanceFromPlayer = Vector2.Distance(_player.transform.position, transform.position);
+
             if (path != null)
             {
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
+            }
+
+            if (distanceFromPlayer < distanciaDeteccio)
+            {
+                if (distanceFromPlayer > distanciaAtac)
+                {
+                    control.move.x = Mathf.Clamp(_player.transform.position.x - transform.position.x, -1, 1);
+                }
+                else
+                {
+                    control.move.x = 0;
+                }
+            }
+
+            if (distanceFromPlayer <= distanciaAtac && Time.time - _lastAttack > _cooldown)
+            {
+                _animator.SetTrigger("Attacking");
+                _lastAttack = Time.time;
+            }
+            /*CheckDirection();
+            _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
+            Debug.Log("Projectile Direction: " + _projectileDirection);*/
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, distanciaDeteccio);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, distanciaAtac);
+        }
+
+        public void OnAnimationConnect()
+        {
+            var health = _player.GetComponent<Health>();
+            health.Decrement();
+        }
+
+        public void OnAnimationThrow()
+        {
+            Vector2 spawnPosition = transform.position;
+            projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
+            CheckDirection();
+            _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
+        }
+
+        private void CheckDirection()
+        {
+            //Vector3 forwardDirection = transform.right;
+
+            if (control.spriteRenderer.flipX == false)
+            {
+                Debug.Log("Dreta");
+                moveDirection = 1;
+            }
+            else if (control.spriteRenderer.flipX == true)
+            {
+                Debug.Log("Esquerra");
+                moveDirection = -1;
+            }
+            else
+            {
+                Debug.Log("cap");
+
             }
         }
 

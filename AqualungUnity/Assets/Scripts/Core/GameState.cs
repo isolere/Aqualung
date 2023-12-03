@@ -11,6 +11,20 @@ public class GameState : MonoBehaviour
     public event OnEventDelegate OnAlertStateChange;
 
     private int _score;
+    private int _fragmentsAqualung;
+
+    public int FragmentsAqualung
+    {
+        get { return _fragmentsAqualung; }
+        set { _fragmentsAqualung=value; }
+    }
+
+    private int _canonadesReparades;
+
+    public int CanonadesReparades
+    {
+        get {return _canonadesReparades;}
+    }
 
     private static GameState _instance;
 
@@ -42,6 +56,7 @@ public class GameState : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        _canonadesReparades = 0;
     }
 
     public int GetScore()
@@ -55,6 +70,12 @@ public class GameState : MonoBehaviour
         Mathf.Clamp(_score, 0, int.MaxValue);
 
         if (OnScoreChanged != null) OnScoreChanged();
+    }
+
+    public void ReparaCanonada()
+    {
+        _canonadesReparades+=1;
+        Debug.Log("Reparada= " + _canonadesReparades);
     }
 
     public void Reset()

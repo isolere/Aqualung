@@ -8,7 +8,7 @@ namespace Platformer.Gameplay
     /// </summary>
     /// <typeparam name="EnemyDeath"></typeparam>
     public class EnemyDeath : Simulation.Event<EnemyDeath>
-    {
+    {       
         public EnemyController enemy;
 
         public override void Execute()

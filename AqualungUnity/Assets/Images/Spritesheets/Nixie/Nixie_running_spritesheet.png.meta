@@ -115,7 +115,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
+        width: 117
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -131,13 +131,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nixie_running_spritesheet_1
+      name: Nixie_running_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 290
         y: 0
-        width: 128
-        height: 128
+        width: 82
+        height: 127
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,12 +152,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nixie_running_spritesheet_2
+      name: Nixie_running_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 256
+        x: 416
         y: 0
-        width: 128
+        width: 80
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -173,12 +173,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nixie_running_spritesheet_3
+      name: Nixie_running_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 384
+        x: 519
         y: 0
-        width: 128
+        width: 122
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -194,12 +194,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nixie_running_spritesheet_4
+      name: Nixie_running_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 512
+        x: 672
         y: 0
-        width: 128
+        width: 80
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -215,12 +215,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nixie_running_spritesheet_5
+      name: Nixie_running_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 640
+        x: 780
         y: 0
-        width: 128
+        width: 93
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -236,6 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Nixie_running_spritesheet_6
       rect:
         serializedVersion: 2
@@ -257,6 +258,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> main
       name: Nixie_running_spritesheet_7
       rect:
         serializedVersion: 2
@@ -271,8 +274,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c0376e2c7b45a24f844e0daeead2f24
-      internalID: 1465604810
+      spriteID: 1bb54676d34d4e04e9e3143402062c7d
+      internalID: -304895386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nixie_running_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19152678d1bdc9344b7fab7c62c2aff8
+      internalID: -634667070
       vertices: []
       indices: 
       edges: []
@@ -289,13 +313,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Nixie_running_spritesheet_0: 2100837722
-      Nixie_running_spritesheet_1: 1694874693
-      Nixie_running_spritesheet_2: 719193488
-      Nixie_running_spritesheet_3: 722816224
-      Nixie_running_spritesheet_4: 773262625
-      Nixie_running_spritesheet_5: -332775526
-      Nixie_running_spritesheet_6: 1407793139
-      Nixie_running_spritesheet_7: 1465604810
+      Nixie_running_spritesheet_1: -634667070
+      Nixie_running_spritesheet_11: -269975437
+      Nixie_running_spritesheet_12: 741775424
+      Nixie_running_spritesheet_2: 1694874693
+      Nixie_running_spritesheet_3: 719193488
+      Nixie_running_spritesheet_4: 722816224
+      Nixie_running_spritesheet_5: 773262625
+      Nixie_running_spritesheet_6: -332775526
+      Nixie_running_spritesheet_7: -304895386
+      Nixie_running_spritesheet_9: 984209906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
