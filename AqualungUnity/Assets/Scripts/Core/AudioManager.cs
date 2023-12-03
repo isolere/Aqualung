@@ -71,8 +71,8 @@ public class AudioManager : MonoBehaviour
         GameState.Instance.OnAlertStateChange += CheckAlert;
     }
 
-    //Funció per inicialitzar els valor de volum de música i efectes de so
-    private void InitializeVolume()
+   // Funció per inicialitzar la gestió del so
+   private void InitializeVolume()
     {
         musicVolume = PlayerPrefs.GetFloat("musicVolume", 1.0f);
         hoverVolume = PlayerPrefs.GetFloat("effectsVolume", 1.0f);
@@ -197,8 +197,7 @@ public class AudioManager : MonoBehaviour
         PlayClip(VictoryClip);
     }
 
-
-    // Funció per desar i actualitzar els valors de volum de la música
+    // Funció per ficar i actulitzar la música
     public void OnMusicVolumeUpdate()
     {
         musicVolume = sliderMusic.value;
@@ -207,7 +206,8 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    //Funció per desar i actualitzar els valors del volum dels efectes
+    // Funció per als Efectes
+
     public void OnEffectsVolumeUpdate()
     {
         hoverVolume = sliderEffects.value;
@@ -215,4 +215,5 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.SetFloat("effectsVolume", hoverVolume);
         PlayerPrefs.Save();
     }
+    
 }
