@@ -802,6 +802,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Lvl1_Spritesheet2_5
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 1910
+        width: 1801
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a34d29e5ec0ac748bb4ccee0370e683
+      internalID: -540592876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
