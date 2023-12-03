@@ -18,6 +18,7 @@ namespace Platformer.Mechanics
         {
             if (canUse && checkWaterReserve() == true)
             {
+                _animator.SetTrigger("Projectil");
                 if (_inventory.Has("Amulet") == false)
                 {
                     _health.Decrement();
