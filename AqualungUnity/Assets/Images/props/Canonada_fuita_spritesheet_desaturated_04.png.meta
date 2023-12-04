@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Canonada_fuita_spritesheet_desaturated_04_0
+      name: Canonada_fuita_spritesheet_desaturated_04_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 132.5
-        height: 512
+        x: 1
+        y: 20
+        width: 123
+        height: 444
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,13 +131,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canonada_fuita_spritesheet_desaturated_04_1
+      name: Canonada_fuita_spritesheet_desaturated_04_2
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
-        width: 132.5
-        height: 512
+        x: 134
+        y: 20
+        width: 123
+        height: 444
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,34 +152,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canonada_fuita_spritesheet_desaturated_04_2
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 132.5
-        height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a15272180aa9da5498d0023331ee8ce2
-      internalID: -1040131212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Canonada_fuita_spritesheet_desaturated_04_3
       rect:
         serializedVersion: 2
-        x: 396
-        y: 0
-        width: 132.5
-        height: 512
+        x: 267
+        y: 20
+        width: 121
+        height: 444
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,6 +168,27 @@ TextureImporter:
       bones: []
       spriteID: e1555460cbcea0a4eb6c0af47154d38d
       internalID: -1664821557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canonada_fuita_spritesheet_desaturated_04_4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 20
+        width: 123
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cf3273ae2c1f044b7257bdb1cecefb
+      internalID: 776859379
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Canonada_fuita_spritesheet_desaturated_04_0: 1598143319
-      Canonada_fuita_spritesheet_desaturated_04_1: 628816402
-      Canonada_fuita_spritesheet_desaturated_04_2: -1040131212
+      Canonada_fuita_spritesheet_desaturated_04_1: 1598143319
+      Canonada_fuita_spritesheet_desaturated_04_2: 628816402
       Canonada_fuita_spritesheet_desaturated_04_3: -1664821557
+      Canonada_fuita_spritesheet_desaturated_04_4: 776859379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

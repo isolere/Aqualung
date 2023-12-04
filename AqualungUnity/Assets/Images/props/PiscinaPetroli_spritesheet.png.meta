@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c0a8c1572572380499bb45e293da711b
+guid: 5234fabe339fd06429f10625d876a3c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,127 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_0
+      name: PiscinaPetroli_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 11
-        y: 34
-        width: 106
-        height: 61
+        x: 8501
+        y: 0
+        width: 1204
+        height: 566
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 928ee61d725ccec4289398d72c77bdf5
-      internalID: -309376470
+      spriteID: 8cc3987cfddd30e42a08aab0bbdcaf2f
+      internalID: 107462062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_1
+      name: PiscinaPetroli_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 151
-        y: 30
-        width: 83
-        height: 68
+        x: 3638
+        y: 0
+        width: 1196
+        height: 568
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5fddd7efff00b438f1c86e0fe3c7a1
-      internalID: 1024309296
+      spriteID: 28a1ab8a3f4143f43bea2a3e5367eaa9
+      internalID: -20800741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_2
+      name: PiscinaPetroli_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 298
-        y: 28
-        width: 45
-        height: 73
+        x: 6071
+        y: 0
+        width: 1197
+        height: 568
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee5c8cfe1dbbfab4eac69a2413798590
-      internalID: 286426112
+      spriteID: eed50af075ec489459986f783c195d49
+      internalID: 784192699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_3
+      name: PiscinaPetroli_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 28
-        width: 45
-        height: 73
+        x: 0
+        y: 0
+        width: 1166
+        height: 570
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28d3dd0f75ad47145ad5ba45035f772d
-      internalID: 356804844
+      spriteID: db7bf1c18c982134ea0b75f4529d7089
+      internalID: 2107818930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_4
+      name: PiscinaPetroli_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 534
-        y: 30
-        width: 84
-        height: 68
+        x: 1204
+        y: 0
+        width: 1197
+        height: 570
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b37125c98d2e8114782c56e73c25a0b8
-      internalID: 1433294479
+      spriteID: a2379562757fd174cb42272e13eeecac
+      internalID: -1453660200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clau_anglesa_spritesheet_01_5
+      name: PiscinaPetroli_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 651
-        y: 34
-        width: 106
-        height: 61
+        x: 2421
+        y: 0
+        width: 1196
+        height: 568
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f6a096f2f008e4281c86c4b04c697b
-      internalID: -736500911
+      spriteID: f888496acbba8e649a1be12ca2014807
+      internalID: -878122312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiscinaPetroli_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4854
+        y: 0
+        width: 1197
+        height: 568
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d0994326e33a04b9eefb8ad02e8019
+      internalID: -986755135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiscinaPetroli_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 7288
+        y: 0
+        width: 1197
+        height: 568
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627f80bfa2d9aa544a0992f8cca8ffff
+      internalID: -1517040164
       vertices: []
       indices: 
       edges: []
@@ -246,12 +288,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      clau_anglesa_spritesheet_01_0: -309376470
-      clau_anglesa_spritesheet_01_1: 1024309296
-      clau_anglesa_spritesheet_01_2: 286426112
-      clau_anglesa_spritesheet_01_3: 356804844
-      clau_anglesa_spritesheet_01_4: 1433294479
-      clau_anglesa_spritesheet_01_5: -736500911
+      PiscinaPetroli_spritesheet_0: 2107818930
+      PiscinaPetroli_spritesheet_1: -1453660200
+      PiscinaPetroli_spritesheet_10: -1919213676
+      PiscinaPetroli_spritesheet_13: 1384814778
+      PiscinaPetroli_spritesheet_14: 186817756
+      PiscinaPetroli_spritesheet_16: 1978793708
+      PiscinaPetroli_spritesheet_17: 609418262
+      PiscinaPetroli_spritesheet_18: -1210428799
+      PiscinaPetroli_spritesheet_19: 1209159248
+      PiscinaPetroli_spritesheet_2: -878122312
+      PiscinaPetroli_spritesheet_3: -20800741
+      PiscinaPetroli_spritesheet_4: -986755135
+      PiscinaPetroli_spritesheet_5: 784192699
+      PiscinaPetroli_spritesheet_6: -1517040164
+      PiscinaPetroli_spritesheet_7: 107462062
+      PiscinaPetroli_spritesheet_8: -356635272
+      PiscinaPetroli_spritesheet_9: -518941130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
