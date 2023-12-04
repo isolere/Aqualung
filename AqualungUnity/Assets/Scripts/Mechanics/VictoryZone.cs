@@ -1,22 +1,23 @@
-using Platformer.Gameplay;
 using UnityEngine;
-using static Platformer.Core.Simulation;
 
-namespace Platformer.Mechanics
+/**
+ * Component que defineix la condició de victoria per aquest joc. Quan el jugador entra dins del vólum
+ * el nivell es completa.
+ */
+[RequireComponent(typeof(Collider2D))]
+public class VictoryZonee : MonoBehaviour
 {
-    /// <summary>
-    /// Marks a trigger as a VictoryZone, usually used to end the current game level.
-    /// </summary>
-    public class VictoryZone : MonoBehaviour
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        void OnTriggerEnter2D(Collider2D collider)
+        if (other.gameObject.CompareTag("Player"))
         {
-            var p = collider.gameObject.GetComponent<PlayerController>();
-            if (p != null)
-            {
-                var ev = Schedule<PlayerEnteredVictoryZone>();
-                ev.victoryZone = this;
-            }
+            // Evitem que es dispari més d'una vegada
+            GetComponent<Collider2D>().enabled = false;
+            AudioManager.Instance.StopTrack();
+            AudioManager.Instance.PlayVictoryClip();
+
+            LevelManager levelManager = FindObjectOfType<LevelManager>();
+            levelManager.EndLevel();
         }
     }
 }
