@@ -11,6 +11,7 @@ namespace Platformer.Mechanics
         {
             if (canUse && checkWaterReserve() == true)
             {
+                _animator.SetTrigger("Plataforma");
                 if (_inventory.Has("Amulet") == false)
                 {
                     _health.Decrement();

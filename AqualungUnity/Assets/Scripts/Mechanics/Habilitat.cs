@@ -18,14 +18,15 @@ namespace Platformer.Mechanics
 
         protected Health _health;
         protected Inventory _inventory;
+        protected Animator _animator;
 
 
         private void Awake()
         {
             _health = GetComponent<Health>();
+            _animator = GetComponent<Animator>();
             coolDown = itemCooldown;
             _inventory = FindObjectOfType<Inventory>();
-
         }
 
         public virtual void UtilitzarHabilitat()
