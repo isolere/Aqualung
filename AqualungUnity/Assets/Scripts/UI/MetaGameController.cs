@@ -27,6 +27,15 @@ namespace Platformer.UI
 
         bool showMainCanvas = false;
 
+        private GameObject _player;
+        private PlayerController _playerController;
+
+        void Awake()
+        {
+            _player = GameObject.FindWithTag("Player");
+            _playerController = _player.GetComponent<PlayerController>();
+        }
+
         void OnEnable()
         {
             _ToggleMainMenu(showMainCanvas);
@@ -51,12 +60,15 @@ namespace Platformer.UI
                 Time.timeScale = 0;
                 mainMenu.gameObject.SetActive(true);
                 foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(false);
+                _playerController.enabled = false;
             }
             else
             {
                 Time.timeScale = 1;
                 mainMenu.gameObject.SetActive(false);
                 foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
+                _playerController.enabled = true;
+
             }
             this.showMainCanvas = show;
         }
