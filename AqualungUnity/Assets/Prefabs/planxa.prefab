@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46cdca1f7e7dd684f939ec745975e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Planxa de metall
+  itemName: Planxa de Metall
   itemInventoryObject: {fileID: 0}
   _inventory: {fileID: 0}
 --- !u!61 &7185864460018534306
