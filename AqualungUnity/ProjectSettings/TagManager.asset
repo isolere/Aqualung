@@ -7,6 +7,8 @@ TagManager:
   - TutorialRequirement
   - Enemic
   - Trito
+  - ParticulesPlataforma
+  - ParticulesProjectil
   layers:
   - Default
   - TransparentFX

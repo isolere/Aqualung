@@ -20,11 +20,16 @@ namespace Platformer.Mechanics
 
         private SpriteRenderer _spriteRenderer;
 
+        private GameObject _particleObject;
+        private ParticleSystem _particules;
+
         private void Awake()
         {
             Debug.Log("Bola d'aigua creada");
             _projectilAigua = FindObjectOfType<ProjectilAigua>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            _particleObject = GameObject.FindWithTag("ParticulesProjectil");
+            _particules = _particleObject.GetComponent<ParticleSystem>();
         }
 
         private void Start()
@@ -68,6 +73,8 @@ namespace Platformer.Mechanics
                     Schedule<EnemyDeath>().enemy = enemyController;
                 }
             }
+            _particules.transform.position = transform.position;
+            _particules.Play();
             Destroy(gameObject);
         }
     }
