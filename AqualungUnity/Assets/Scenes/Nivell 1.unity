@@ -821,7 +821,7 @@ MonoBehaviour:
   model:
     virtualCamera: {fileID: 1946717924}
     player: {fileID: 1646236914}
-    spawnPoint: {fileID: 0}
+    spawnPoint: {fileID: 421228357}
     jumpModifier: 0.9
     jumpDeceleration: 0
 --- !u!4 &40140270

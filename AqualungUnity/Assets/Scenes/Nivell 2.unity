@@ -2565,7 +2565,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 10.38, z: -10}
+  m_LocalPosition: {x: -4.29, y: 5.88, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -131904,12 +131904,12 @@ PrefabInstance:
     - target: {fileID: 724470784689038125, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: -4.29
       objectReference: {fileID: 0}
     - target: {fileID: 724470784689038125, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.38
+      value: 5.88
       objectReference: {fileID: 0}
     - target: {fileID: 724470784689038125, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
         type: 3}
@@ -137739,6 +137739,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59aea03cf01fbfa45892d10757b6a03c, type: 3}
+--- !u!1 &1310321859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7925833316789393351, guid: a0ac274e7ecc1364dafc224c4af5861b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618782201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1357503106
 GameObject:
   m_ObjectHideFlags: 0
@@ -138144,7 +138150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1377441407
 Transform:
   m_ObjectHideFlags: 0
@@ -140349,6 +140355,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59aea03cf01fbfa45892d10757b6a03c, type: 3}
+--- !u!114 &1525966546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5759328344552810815, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
+    type: 3}
+  m_PrefabInstance: {fileID: 579275697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1539890943
 GameObject:
   m_ObjectHideFlags: 0
@@ -141995,9 +142013,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model:
-    virtualCamera: {fileID: 0}
-    player: {fileID: 0}
-    spawnPoint: {fileID: 0}
+    virtualCamera: {fileID: 1946717924}
+    player: {fileID: 1525966546}
+    spawnPoint: {fileID: 421228357}
     jumpModifier: 0.9
     jumpDeceleration: 0
 --- !u!4 &1754240608
@@ -143401,7 +143419,7 @@ EdgeCollider2D:
   - {x: -9.134048, y: 8.92161}
   - {x: -7.860253, y: 5.6624393}
   - {x: -8.576916, y: 2.3427963}
-  - {x: -7.6033225, y: -0.61780596}
+  - {x: -7.677528, y: -0.26532984}
   - {x: 0.7832945, y: 0.21874046}
   - {x: 3.1791031, y: 0.24603558}
   - {x: 3.9506125, y: 0.31911325}
@@ -146661,7 +146679,7 @@ Transform:
   m_GameObject: {fileID: 1946717923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 10.38, z: -10}
+  m_LocalPosition: {x: -4.29, y: 5.88, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -148076,6 +148094,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 506569759723981391, guid: 05012e3597aa43c4d966579afc0b96e3,
+        type: 3}
+      propertyPath: _amuletUI
+      value: 
+      objectReference: {fileID: 1310321859}
     - target: {fileID: 2811203034441979076, guid: 05012e3597aa43c4d966579afc0b96e3,
         type: 3}
       propertyPath: m_Name
@@ -148089,12 +148112,12 @@ PrefabInstance:
     - target: {fileID: 3987529930105099472, guid: 05012e3597aa43c4d966579afc0b96e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 192.23
+      value: 192.6
       objectReference: {fileID: 0}
     - target: {fileID: 3987529930105099472, guid: 05012e3597aa43c4d966579afc0b96e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 3987529930105099472, guid: 05012e3597aa43c4d966579afc0b96e3,
         type: 3}
