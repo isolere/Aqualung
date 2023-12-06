@@ -13,6 +13,7 @@ namespace Platformer.Mechanics
         {
             get { return projectileDirection; }
         }
+        [SerializeField] private Transform _projectilePosition;
 
         public override void UtilitzarHabilitat()
         {
@@ -23,13 +24,18 @@ namespace Platformer.Mechanics
                 {
                     _health.Decrement();
                 }
-                Vector2 spawnPosition = transform.position;
-                item = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
+                Invoke("InstantiateItem",0.2f);
                 playerDirection = PlayerController.moveDirection;
                 projectileDirection = playerDirection > 0 ? new Vector3(1f,.3f,0f) : new Vector3(-1f,.3f,0f);
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);
             }
+        }
+
+        void InstantiateItem()
+        {
+            Vector2 spawnPosition = _projectilePosition.position;
+            item = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
         }
     }
 }

@@ -18,15 +18,22 @@ namespace Platformer.Mechanics
 
         private Vector3 _direction;
 
+        private SpriteRenderer _spriteRenderer;
+
         private void Awake()
         {
             Debug.Log("Bola d'aigua creada");
             _projectilAigua = FindObjectOfType<ProjectilAigua>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         private void Start()
         {
             _direction = _projectilAigua.ProjectileDirection;
+            if(_direction.x>0)
+            {
+                _spriteRenderer.flipX = !_spriteRenderer.flipX;
+            }
         }
 
         private void Update()

@@ -16,13 +16,18 @@ namespace Platformer.Mechanics
                 {
                     _health.Decrement();
                 }
-                Vector3 cursorPosition = Input.mousePosition;
-                cursorPosition.z = 1.0f;
-                Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
-                item = Instantiate(itemPrefab, worldPosition, Quaternion.identity);
+                Invoke("InstantiateItem", 0.3f);
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);
             }
+        }
+
+        void InstantiateItem()
+        {
+            Vector3 cursorPosition = Input.mousePosition;
+            cursorPosition.z = 1.0f;
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
+            item = Instantiate(itemPrefab, worldPosition, Quaternion.identity);
         }
     }
 }
