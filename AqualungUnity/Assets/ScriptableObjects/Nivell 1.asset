@@ -17,4 +17,4 @@ MonoBehaviour:
   levelMission: Aconsegueix reparar les fuites d'aigua i restableix el subministrament
     d'aigua potable a la ciutat
   ambientMusic: {fileID: 8300000, guid: a8c98200d42ca9443957032899b9045b, type: 3}
-  combatMusic: {fileID: 0}
+  combatMusic: {fileID: 8300000, guid: 313d566fd3e426c48ae42cba01ad3f25, type: 3}

@@ -17,4 +17,4 @@ MonoBehaviour:
   levelMission: "Aconsegueix frenar el vessament d'aig\xFCes t\xF2xiques i acaba
     amb en Benzo"
   ambientMusic: {fileID: 8300000, guid: a8c98200d42ca9443957032899b9045b, type: 3}
-  combatMusic: {fileID: 0}
+  combatMusic: {fileID: 8300000, guid: b8528ba7a53421940ac55a7aef0314fd, type: 3}
