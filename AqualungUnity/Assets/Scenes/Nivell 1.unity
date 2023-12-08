@@ -81168,6 +81168,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 529848304689189327, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 529848304689189327, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 529848304689189327, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7968593822665607104, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 529848304689189327, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 529848304689189327, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 970590798868679368, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -81188,10 +81215,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleMainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1907112105266854786, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2019774714859383732, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079859848148559025, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147517045193765044, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318233370420494279, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.4117647
       objectReference: {fileID: 0}
     - target: {fileID: 4041378009404210051, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
@@ -81293,6 +81340,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4275914852893065418, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 4275914852893065418, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5998586100664571939, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_Name
@@ -81308,7 +81366,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7679697716721025587, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.4117647
+      objectReference: {fileID: 0}
     - target: {fileID: 7822937876221736207, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850741514188184614, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309775858579604272, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -81316,6 +81389,11 @@ PrefabInstance:
     - target: {fileID: 8609684798126453196, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202370292788016469, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
