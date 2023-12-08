@@ -1055,7 +1055,17 @@ PrefabInstance:
     - target: {fileID: 2372617544395469646, guid: e16eaef12648dac4dab70992f82f2eaf,
         type: 3}
       propertyPath: TrailModule.lifetime.scalar
-      value: 1
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372617544395469646, guid: e16eaef12648dac4dab70992f82f2eaf,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748664591300413619, guid: e16eaef12648dac4dab70992f82f2eaf,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5984739402960121607, guid: e16eaef12648dac4dab70992f82f2eaf,
         type: 3}
