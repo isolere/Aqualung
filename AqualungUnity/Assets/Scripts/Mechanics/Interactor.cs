@@ -6,6 +6,8 @@ using UnityEngine;
  * ALERTA! Aquest component ha d'anar en un fill de l'arrel, no pot afegir-se directament perquè requereix
  * un component de tipus collider propi.
  */
+/*Aquest mètode s'ha extret del projecte Escape From IOC. Genera un error de NullReference amb el mètode Unselect, que no hem
+ sapigut solucionar.*/
 [RequireComponent(typeof(Collider2D))]
 public class Interactor : MonoBehaviour
 {

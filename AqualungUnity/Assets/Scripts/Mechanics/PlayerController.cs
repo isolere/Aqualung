@@ -12,6 +12,9 @@ namespace Platformer.Mechanics
     /// This is the main class used to implement control of the player.
     /// It is a superset of the AnimationController class, but is inlined to allow for any kind of customisation.
     /// </summary>
+    /// 
+    /*Aquesta classe controla el jugador. Ve incorporada al template del projecte, i hi hem realitzat algunes modificacions
+     per ajustar-la als requeriments del nostre projecte.*/
     public class PlayerController : KinematicObject
     {
         public AudioClip jumpAudio;
@@ -77,6 +80,8 @@ namespace Platformer.Mechanics
                     Schedule<PlayerStopJump>().player = this;
                 }
 
+                /*Seguit de condicionals per comprovar altres funcions del jugador, a part del moviment. Tenim en compte la
+                 utilització de les habilitats de la Nixie, així com la interacció amb d'altres elements o personatges dins el joc.*/
                 if(Input.GetButtonDown("Fire1"))
                 {
                     _projectilAigua.UtilitzarHabilitat();

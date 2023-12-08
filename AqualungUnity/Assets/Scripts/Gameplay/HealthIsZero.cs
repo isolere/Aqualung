@@ -14,6 +14,10 @@ namespace Platformer.Gameplay
     {
         public Health health;
 
+        /*En aquest mètode va ser necessari realitzar canvis, ja que només contemplava l'esdeveniment
+         <PlayerDeath>. Sense saber perquè, el jugador moria quan impactava amb els enemics i els eliminava,
+        i va ser necessari afegir aquest condicional per comprovar si el GameObject que es quedava amb el 
+        component Health a zero era el jugador o un enemic.*/
         public override void Execute()
         {
             if (health.gameObject.CompareTag("Player"))

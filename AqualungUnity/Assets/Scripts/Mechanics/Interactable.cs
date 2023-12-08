@@ -5,6 +5,7 @@ using UnityEngine.Events;
 /**
  * Component pels elements amb els que es pot interactuar, per exemple portes i cofres
  */
+/*Classe complementària a Interactor. Extreta del projecte Escape From IOC.*/
 public class Interactable : MonoBehaviour
 {
     public UnityEvent OnSelect;

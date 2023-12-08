@@ -16,6 +16,7 @@ public class VictoryZonee : MonoBehaviour
             AudioManager.Instance.StopTrack();
             AudioManager.Instance.PlayVictoryClip();
 
+            //Localitzem el LevelManager i carreguem el mètode que finalitza el nivell
             LevelManager levelManager = FindObjectOfType<LevelManager>();
             levelManager.EndLevel();
         }

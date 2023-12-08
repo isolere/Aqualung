@@ -1,7 +1,8 @@
 using UnityEngine;
 
 /**
- * Classe que manté l'estat del joc durant la partida
+ * Classe que manté l'estat del joc durant la partida. Es tracta d'un Singleton que es mantindrà actiu
+ * encara que canviem de nivell
  */
 public class GameState : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameState : MonoBehaviour
     public event OnEventDelegate OnAlertStateChange;
 
     private int _score;
+
+    //Controlarem els fragments d'aqualung recollits per mantenir actualitzat el nivell de vida màxia
+    //durant la resta de la partida
     private int _fragmentsAqualung;
 
     public int FragmentsAqualung
@@ -18,7 +22,7 @@ public class GameState : MonoBehaviour
         get { return _fragmentsAqualung; }
         set { _fragmentsAqualung=value; }
     }
-
+    //Controlarem les canonades reparades durant el nivell 1
     private int _canonadesReparades;
 
     public int CanonadesReparades
@@ -46,6 +50,8 @@ public class GameState : MonoBehaviour
 
     private void Awake()
     {
+        /*Ens assegurem que la instància de la classe es manté activa quan s'inicii una escena
+         nova. Si no existeix, creem una instància nova.*/
         if (_instance != null)
         {
             gameObject.SetActive(false);
@@ -71,7 +77,7 @@ public class GameState : MonoBehaviour
 
         if (OnScoreChanged != null) OnScoreChanged();
     }
-
+    //Controlarem la quantitat de canonades reparades per l'objectiu de la missió del nivell 1
     public void ReparaCanonada()
     {
         _canonadesReparades+=1;
@@ -86,6 +92,9 @@ public class GameState : MonoBehaviour
         ResetAlert();
     }
 
+
+    /*Aquests mètodes no són necessaris per al nostre projecte, però existien en el projecte d'on vam
+    extreure la classe GameState*/
     public void ResetAlert()
     {
         _alertedEnemies = 0;

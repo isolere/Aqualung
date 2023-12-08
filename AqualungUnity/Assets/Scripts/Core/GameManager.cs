@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /**
- * Gestor de la càrrega d'escenes al joc
+ * Gestor de la càrrega d'escenes al joc. Aquesta classe es tracta d'un Singleton que es mantindrà
+ * actiu durant tot el joc, manetenint la informació sobre el procés realitzat en aquest. També 
+ * s'encarregarà de carregar les escenes corresponents, depenent dels requeriments del joc.
  */
 public class GameManager : MonoBehaviour
 {
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
         get { return _instance; }
     }
 
+    /*Al tractar-se d'un Singleton, quan comença l'escena es comprova si aquest ja existeix. En cas afirmatiu es
+     manté, i en cas negatiu se'n crea una nova instància.*/
     private void Awake()
     {
         if (_instance != null)
@@ -80,7 +84,8 @@ public class GameManager : MonoBehaviour
         Instance.StartCoroutine(Instance.DelayedLoadLevel(Instance.victory, Instance.sceneVictoryDelay));
     }
 
-
+    /*Aquest mètode utilitza una corutina per carregar el nivell corresponent del joc després d'un cert període
+     de temps. D'aquesta manera, el canvi entre escenes no és immediat.*/
     public static void LoadLevel(string sceneName)
     {
         Instance.StartCoroutine(Instance.DelayedLoadLevel(sceneName, Instance.sceneLoadDelay));

@@ -2,7 +2,9 @@
 using UnityEngine;
 
 /**
- * Classe que configura el nivell actual quan carrega la escena
+ * Classe que configura el nivell actual quan carrega la escena. Controla l'ScriptableObject que s'encarrega de
+ * la configuració del nivell, i entrega a la UI la informació corresponent. També gestiona com ha d'actuar el
+ * joc en el moment en que es finalitza un nivell.
  */
 public class LevelManager : MonoBehaviour
 {
@@ -39,8 +41,11 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        //Indiquem a GameState que s'ha incrementat de nivell
         GameState.Instance.CurrentLevel++;
 
+        /*En cas que aquest sigui l'últim nivell, carregarem l'escena de victòria, en cas contrari
+        carregarem des del GameManager el següent nivell*/
         if (GameState.Instance.CurrentLevel == GameManager.GameLevels.Levels.Count)
         {
             GameManager.LoadVictory();

@@ -30,6 +30,11 @@ namespace Platformer.Gameplay
                 player.animator.SetTrigger("hurt");
                 player.animator.SetBool("dead", true);
 
+
+                /*Aquí hem afegit un canvi, ja que al template original, quan el jugador moria, aquest tornava a 
+                 reviure, i apareixia en un punt concret de l'escena. En el nostre cas no és així, i el que fem 
+                és carregar l'escena de GameOver.*/
+
                 GameManager.LoadGameOver();
                 //Simulation.Schedule<PlayerSpawn>(2);
             }

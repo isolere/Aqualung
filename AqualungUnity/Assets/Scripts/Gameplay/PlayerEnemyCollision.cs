@@ -18,6 +18,10 @@ namespace Platformer.Gameplay
 
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
+
+        /*En aquest mètode hem hagut de realitzar alguns canvis, ja que al template original el jugador
+         moria després de rèbrer un impacte. Per altra banda, es té en compte tant si l'enemic té un component 
+        Health com si no. En el nostre cas, sempre el tindrà.*/
         public override void Execute()
         {
             var willHurtEnemy = player.Bounds.center.y >= enemy.Bounds.max.y;
@@ -38,12 +42,16 @@ namespace Platformer.Gameplay
                         player.Bounce(3);
                     }
                 }
+                /*Aquest condicional només es reprodueix si l'enemic no té component Health. En el nostre cas no hauria
+                de succeir mai.*/
                 else
                 {
                     Schedule<EnemyDeath>().enemy = enemy;
                     player.Bounce(2);
                 }
             }
+            /*Ja que el jugador té un component Health, i no mor amb un únic impacte, accedim a la seva vida i la disminuim 
+             en 1 punt.*/
             else
             {
                 var playerHealth = player.GetComponent<Health>();

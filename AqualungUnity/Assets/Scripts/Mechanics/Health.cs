@@ -8,6 +8,11 @@ namespace Platformer.Mechanics
     /// <summary>
     /// Represebts the current vital statistics of some game entity.
     /// </summary>
+    /// 
+    /*Aquesta classe prové del template del projecte base utilitzat, però hi hem realitzat algunes modificacions
+     per adaptar-la a les necessitats del nostre projecte. Hem incorporat la reserva d'aigua, i la possibilitat 
+    d'incrementar Health en més d'un punt.Aquesta classe és utilitzada tant pel jugador com pels enemics, i es 
+    combina amb diversos esdeveniments, que comproven si el gameObject afectat és el jugador o un enemic.*/
     public class Health : MonoBehaviour
     {
         public delegate void OnHealthChangeDelegate(int amount);
@@ -47,6 +52,8 @@ namespace Platformer.Mechanics
             if (OnHealthChanged != null) OnHealthChanged(1);
         }
 
+        /*Aquest mètode permet incrementar la vida del jugador en un valor concret, que podem establir. Serà utilitzat
+         per les Fonts per restablir de cop diversos punts de vida del jugador.*/
         public void IncrementMultiple(int value)
         {
             currentHP = Mathf.Clamp(currentHP + value, 0, maxHP);
@@ -56,6 +63,11 @@ namespace Platformer.Mechanics
         /// Decrement the HP of the entity. Will trigger a HealthIsZero event when
         /// current HP reaches 0.
         /// </summary>
+        /// 
+        /*Aquest mètode disminueix la vida del jugador en 1 punt. Comprovem primer que el jugador no estigui ja mort, per
+         evitar que es resti més vida, i aquesta no sigui correcta en cas de respawn. Si la vida del jugador és zero, cridem 
+        l'esdeveniment HealthIsZero, que comprovarà si es tracta del jugador o un enemic, i procedirà a executar la mort del
+        element concret.*/
         public void Decrement()
         {
             if (_isAlreadyDead == false)
@@ -74,11 +86,14 @@ namespace Platformer.Mechanics
         /// <summary>
         /// Decrement the HP of the entitiy until HP reaches 0.
         /// </summary>
+        /// 
+        //Permet "matar" un gameObject, independentment de la quantitat de vida de la que disposi.
         public void Die()
         {
             while (currentHP > 0) Decrement();
         }
 
+        //Restablim la vida fins al seu valor màxim
         public void RestoreLife()
         {
             currentHP = maxHP;
