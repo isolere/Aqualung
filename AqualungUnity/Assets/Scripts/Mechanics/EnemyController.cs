@@ -42,6 +42,7 @@ namespace Platformer.Mechanics
         }
 
         private bool _isDead;
+        private bool _outOfRange;
 
         void Awake()
         {
@@ -52,6 +53,7 @@ namespace Platformer.Mechanics
             _player = GameObject.FindGameObjectWithTag("Player");
             _animator = GetComponent<Animator>();
             _isDead = false;
+            _outOfRange = true;
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -77,6 +79,13 @@ namespace Platformer.Mechanics
 
             if (distanceFromPlayer < distanciaDeteccio)
             {
+                if (_outOfRange)
+                {
+                    Debug.Log("Incrementa");
+                    GameState.Instance.IncreaseAlert();
+                    _outOfRange = false;
+                }
+
                 if (distanceFromPlayer > distanciaAtac)
                 {
                     control.move.x = Mathf.Clamp(_player.transform.position.x - transform.position.x, -1, 1);
@@ -84,13 +93,21 @@ namespace Platformer.Mechanics
                 else
                 {
                     control.move.x = 0;
+                    if (Time.time - _lastAttack > _cooldown && !_isDead)
+                    {
+                        _animator.SetTrigger("Attacking");
+                        _lastAttack = Time.time;
+                    }
                 }
             }
-
-            if (distanceFromPlayer <= distanciaAtac && Time.time - _lastAttack > _cooldown && !_isDead)
+            else
             {
-                _animator.SetTrigger("Attacking");
-                _lastAttack = Time.time;
+                if (!_outOfRange)
+                {
+                    Debug.Log("Disminueix");
+                    GameState.Instance.DecreaseAlert();
+                    _outOfRange = true;
+                }
             }
             /*CheckDirection();
             _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
@@ -152,6 +169,9 @@ namespace Platformer.Mechanics
         void DestroyBody()
         {
             Destroy(gameObject);
+            Debug.Log("Disminueix");
+            GameState.Instance.DecreaseAlert();
+            _outOfRange = true;
         }
 
     }

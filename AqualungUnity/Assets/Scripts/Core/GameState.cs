@@ -32,7 +32,7 @@ public class GameState : MonoBehaviour
 
     private static GameState _instance;
 
-    private int _alertedEnemies = 0;
+    private bool _alertedEnemies = false;
 
     public static GameState Instance
     {
@@ -92,19 +92,17 @@ public class GameState : MonoBehaviour
         ResetAlert();
     }
 
-
-    /*Aquests mètodes no són necessaris per al nostre projecte, però existien en el projecte d'on vam
-    extreure la classe GameState*/
     public void ResetAlert()
     {
-        _alertedEnemies = 0;
+        _alertedEnemies = false;
     }
 
     public void IncreaseAlert()
     {
-        _alertedEnemies++;
+        _alertedEnemies=true;
+        Debug.Log("Alerted: " + _alertedEnemies);
 
-        if (_alertedEnemies == 1 && OnAlertStateChange != null)
+        if (_alertedEnemies == true && OnAlertStateChange != null)
         {
             OnAlertStateChange();
         }
@@ -112,8 +110,10 @@ public class GameState : MonoBehaviour
 
     public void DecreaseAlert()
     {
-        _alertedEnemies--;
-        if (_alertedEnemies == 0 && OnAlertStateChange != null)
+        _alertedEnemies=false;
+        Debug.Log("Alerted: " + _alertedEnemies);
+
+        if (_alertedEnemies == false && OnAlertStateChange != null)
         {
             OnAlertStateChange();
         }
@@ -121,6 +121,6 @@ public class GameState : MonoBehaviour
 
     public bool IsAlerted()
     {
-        return _alertedEnemies > 0;
+        return _alertedEnemies;
     }
 }
