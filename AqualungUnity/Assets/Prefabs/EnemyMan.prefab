@@ -194,6 +194,7 @@ MonoBehaviour:
   move: {x: 0, y: 0}
   jump: 0
   stopJump: 0
+  spriteRenderer: {fileID: 0}
 --- !u!114 &772289407653213039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  ouch: {fileID: 8300000, guid: b92a1a01b6d1fcc4e98c80c55df5c562, type: 3}
   distanciaDeteccio: 4
   distanciaAtac: 2
   _cooldown: 1.5

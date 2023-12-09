@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t: 0.5
   modulus: 0
-  clip: {fileID: 8300000, guid: ecfcdd2fe570f4645b737a85c1f62295, type: 3}
+  clip: {fileID: 8300000, guid: ee8f1b9ad81081f43b71b5148494064b, type: 3}
 --- !u!114 &-8222929431232938568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t: 0.5
   modulus: 0
-  clip: {fileID: 8300000, guid: cf83a23b3f5527a4289571bcc23d174f, type: 3}
+  clip: {fileID: 8300000, guid: b5ba677bb277bbd4d9ffc62a98e91939, type: 3}
 --- !u!114 &-6977843191707482481
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,6 +88,21 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-4168891897053423192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: 0.5
+  modulus: 0
+  clip: {fileID: 8300000, guid: 019c92ea6c243ec4cb1ad4fc0b071476, type: 3}
 --- !u!1101 &-3011137087782728578
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -304,7 +319,7 @@ AnimatorStateMachine:
     m_Position: {x: 10, y: -530, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5009945742397230612}
-    m_Position: {x: 100, y: -730, z: 0}
+    m_Position: {x: 140, y: -730, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101020438278029396}
@@ -331,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0
+  t: 0.1
   modulus: 1
   clip: {fileID: 8300000, guid: bdb49257b73be764a8c04e4f37302e0e, type: 3}
 --- !u!114 &114742276622948332
@@ -346,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.5
+  t: 0.1
   modulus: 0
   clip: {fileID: 8300000, guid: dd6057fd464f77942a0bf39c54651b32, type: 3}
 --- !u!114 &114792792654640044
@@ -361,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.5
+  t: 0.6
   modulus: 1
   clip: {fileID: 8300000, guid: 3318e557ea5714340abb5376ce7fb8c6, type: 3}
 --- !u!1101 &1101000010127028388
@@ -521,7 +536,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: velocityX
-    m_EventTreshold: 0.01
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102799505466558240}
   m_Solo: 0
@@ -795,7 +810,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101753958007847430}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -4168891897053423192}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -1072,7 +1088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.5
+  t: 0.4
   modulus: 0
   clip: {fileID: 8300000, guid: 801ddaf10aecf354d92bd247d81abafe, type: 3}
 --- !u!114 &4805567771412558236

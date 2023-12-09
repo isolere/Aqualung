@@ -194,6 +194,7 @@ MonoBehaviour:
   move: {x: 0, y: 0}
   jump: 0
   stopJump: 0
+  spriteRenderer: {fileID: 0}
 --- !u!114 &772289407653213039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,10 +208,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  ouch: {fileID: 8300000, guid: 57c9c5da2b98dae47bed860f3e60db06, type: 3}
   distanciaDeteccio: 3
   distanciaAtac: 0.65
   _cooldown: 1.5
+  _projectilePrefab: {fileID: 0}
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0
