@@ -32,15 +32,7 @@ namespace Platformer.Gameplay
                 if (enemyHealth != null)
                 {
                     enemyHealth.Decrement();
-                    if (!enemyHealth.IsAlive)
-                    {
-                        Schedule<EnemyDeath>().enemy = enemy;
-                        player.Bounce(1);
-                    }
-                    else
-                    {
-                        player.Bounce(3);
-                    }
+                    player.Bounce(4);
                 }
                 /*Aquest condicional només es reprodueix si l'enemic no té component Health. En el nostre cas no hauria
                 de succeir mai.*/

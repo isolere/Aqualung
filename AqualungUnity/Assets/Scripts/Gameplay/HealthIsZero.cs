@@ -26,7 +26,9 @@ namespace Platformer.Gameplay
             }
             else if (health.gameObject.CompareTag("Enemic"))
             {
-                Schedule<EnemyDeath>();
+                EnemyController enemyController = health.gameObject.GetComponent<EnemyController>();
+                enemyController.EnemyDeath();
+                //Schedule<EnemyDeath>();
             }
         }
     }

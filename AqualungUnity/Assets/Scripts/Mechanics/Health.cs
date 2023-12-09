@@ -43,6 +43,8 @@ namespace Platformer.Mechanics
 
         private bool _isAlreadyDead=false;
 
+        private Animator _animator;
+
         /// <summary>
         /// Increment the HP of the entity.
         /// </summary>
@@ -73,6 +75,7 @@ namespace Platformer.Mechanics
             if (_isAlreadyDead == false)
             {
                 currentHP = Mathf.Clamp(currentHP - 1, 0, maxHP);
+                _animator.SetTrigger("hurt");
                 if (currentHP == 0)
                 {
                     _isAlreadyDead = true;
@@ -103,6 +106,7 @@ namespace Platformer.Mechanics
         void Awake()
         {
             currentHP = maxHP;
+            _animator = GetComponent<Animator>();
         }
     }
 }

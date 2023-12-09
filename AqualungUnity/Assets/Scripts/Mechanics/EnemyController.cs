@@ -41,6 +41,8 @@ namespace Platformer.Mechanics
             get { return _projectileDirection; }
         }
 
+        private bool _isDead;
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
@@ -49,12 +51,13 @@ namespace Platformer.Mechanics
             spriteRenderer = GetComponent<SpriteRenderer>();
             _player = GameObject.FindGameObjectWithTag("Player");
             _animator = GetComponent<Animator>();
+            _isDead = false;
         }
 
         void OnCollisionEnter2D(Collision2D collision)
         {
             var player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
+            if (player != null&&!_isDead)
             {
                 var ev = Schedule<PlayerEnemyCollision>();
                 ev.player = player;
@@ -84,7 +87,7 @@ namespace Platformer.Mechanics
                 }
             }
 
-            if (distanceFromPlayer <= distanciaAtac && Time.time - _lastAttack > _cooldown)
+            if (distanceFromPlayer <= distanciaAtac && Time.time - _lastAttack > _cooldown && !_isDead)
             {
                 _animator.SetTrigger("Attacking");
                 _lastAttack = Time.time;
@@ -133,8 +136,22 @@ namespace Platformer.Mechanics
             else
             {
                 Debug.Log("cap");
-
             }
+        }
+
+        public void EnemyDeath()
+        {
+            _isDead = true;
+            Debug.Log("Enemic mort");
+            _animator.SetTrigger("death");
+            //_collider.enabled = false;
+            control.enabled = false;
+            Invoke("DestroyBody",1.5f);
+        }
+
+        void DestroyBody()
+        {
+            Destroy(gameObject);
         }
 
     }

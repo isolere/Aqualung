@@ -141993,6 +141993,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1748517987}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752019491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+    type: 3}
+  m_PrefabInstance: {fileID: 415585634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1754240606
 GameObject:
   m_ObjectHideFlags: 0
@@ -142026,8 +142038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model:
-    virtualCamera: {fileID: 0}
-    player: {fileID: 0}
+    virtualCamera: {fileID: 1946717924}
+    player: {fileID: 1923336677}
     spawnPoint: {fileID: 0}
     jumpModifier: 0.9
     jumpDeceleration: 0
@@ -144277,6 +144289,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59aea03cf01fbfa45892d10757b6a03c, type: 3}
+--- !u!114 &1862972318 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+    type: 3}
+  m_PrefabInstance: {fileID: 415585634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1893666441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144377,6 +144401,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 64945249}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1923336677 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5759328344552810815, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
+    type: 3}
+  m_PrefabInstance: {fileID: 579275697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1929641320
 GameObject:
   m_ObjectHideFlags: 0
@@ -148264,6 +148300,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: sliderMusic
+      value: 
+      objectReference: {fileID: 1862972318}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: sliderEffects
+      value: 
+      objectReference: {fileID: 1752019491}
     - target: {fileID: 8904768628811023302, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: m_LocalPosition.x

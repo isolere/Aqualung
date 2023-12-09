@@ -77,10 +77,6 @@ namespace Platformer.Mechanics
             if (health != null && enemyController != null)
             {
                 health.Decrement();
-                if (!health.IsAlive)
-                {
-                    Schedule<EnemyDeath>().enemy = enemyController;
-                }
             }
             //Situem el sistema de partícules a la posició de l'impacte i l'executem.
             _particules.transform.position = transform.position;

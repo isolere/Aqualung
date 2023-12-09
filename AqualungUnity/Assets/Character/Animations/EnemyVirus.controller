@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.5
+  t: 1
   modulus: 0
   clip: {fileID: 8300000, guid: 595dbcb4f8215354aa31348bb36f0dae, type: 3}
 --- !u!114 &-3214295880309786476
@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: 0.5
-  modulus: 0
+  modulus: 2
   clip: {fileID: 8300000, guid: 2ee620d7d2e076640828984cd63d3671, type: 3}
 --- !u!114 &-2912911153913028977
 MonoBehaviour:
