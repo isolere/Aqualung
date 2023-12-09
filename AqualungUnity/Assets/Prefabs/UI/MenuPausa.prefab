@@ -4267,7 +4267,7 @@ MonoBehaviour:
       - m_Target: {fileID: 5032270541428757582, guid: 501a779747020c54a958ee0c3ef48f93,
           type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
