@@ -63,6 +63,7 @@ public class GameState : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         _canonadesReparades = 0;
+        _fragmentsAqualung = 0;
     }
 
     public int GetScore()

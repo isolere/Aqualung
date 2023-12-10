@@ -13,6 +13,9 @@ public class Interactor : MonoBehaviour
 {
     private Interactable selected;
 
+    /*Què succeeix quan l'Interactor interactua amb un Interactable. Executem el mètode Interact de l'Interactable. En el nostre
+    cas, com que a l'interactuar amb la majoria d'elements desactivem el seu collider, hem eliminat la segona part del codi per
+    evitar una doble trucada al mètode Unselect, que aportava un error de referència nul.la.*/
     public void Interact()
     {
         if (selected != null)
@@ -27,6 +30,7 @@ public class Interactor : MonoBehaviour
         }
     }
 
+    //Què succeeix quan l'Interactor s'allunya de la influència de l'Interactable.
     private void Unselect(GameObject target)
     {
         if (selected.transform.root == target.transform.root)
@@ -36,10 +40,12 @@ public class Interactor : MonoBehaviour
         }
     }
 
+    //Què succeeix quan l'Interactor entra en la influència de l'Interactable.
     private void Select(GameObject target)
     {
         if (!selected || target.transform.root != selected.transform.root)
         {
+     
             Interactable candidate = GetInteractable(target.gameObject);
 
             // Aquest collider només ha de colisionar amb els interactables, però ens assegurem
@@ -72,6 +78,7 @@ public class Interactor : MonoBehaviour
         Select(other.gameObject);
     }
 
+    //Mètode per obtenir l'Interactable d'un objecte
     Interactable GetInteractable(GameObject source)
     {
         Interactable interactable = null;
