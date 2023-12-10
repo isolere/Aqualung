@@ -9,6 +9,9 @@ namespace Platformer.Mechanics
     /// <summary>
     /// A simple controller for enemies. Provides movement control over a patrol path.
     /// </summary>
+    /// 
+    /*Aquesta classe ve incorporada al template del projecte original, però hi hem realitzat alguns ajustaments per
+     adaptar-la al nostre projecte. Gestionarem el seguiment i atac contra el jugador, així com la mort de l'enemic.*/
     [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
     public class EnemyController : MonoBehaviour
     {
@@ -76,9 +79,12 @@ namespace Platformer.Mechanics
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
             }
-
+            /*Gestionem la distància envers el jugador, i la reacció de l'enemic en conseqüència. Si la distància és menor a la
+             distància de detecció, l'enemic s'aproximarà al jugador. En cas contrari, l'enemic es quedarà al seu lloc, o tornarà
+            al Patrol Path que li hagi estat assignat.*/
             if (distanceFromPlayer < distanciaDeteccio)
             {
+                //Gestionem les alertes dins el GameState per aplicar o no música de combat.
                 if (_outOfRange)
                 {
                     Debug.Log("Incrementa");
@@ -86,6 +92,8 @@ namespace Platformer.Mechanics
                     _outOfRange = false;
                 }
 
+                /*Si la distància és major a la distància d'atac, l'enemic s'aproparà al jugador. En cas contrari, l'enemic deixarà de moure's, 
+                 i començarà a atacar al jugador.*/
                 if (distanceFromPlayer > distanciaAtac)
                 {
                     control.move.x = Mathf.Clamp(_player.transform.position.x - transform.position.x, -1, 1);
@@ -102,6 +110,7 @@ namespace Platformer.Mechanics
             }
             else
             {
+                //Si el jugador està fora de l'abast, indiquem al GameState que l'alerta disminueix, i es reprodueix la música normal del nivell.
                 if (!_outOfRange)
                 {
                     Debug.Log("Disminueix");
@@ -114,6 +123,7 @@ namespace Platformer.Mechanics
             Debug.Log("Projectile Direction: " + _projectileDirection);*/
         }
 
+        //Mostra a l'escena un Gizmo amb la distància de detecció i la d'atac.
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
@@ -122,12 +132,14 @@ namespace Platformer.Mechanics
             Gizmos.DrawWireSphere(transform.position, distanciaAtac);
         }
 
+        //Esdeveniment d'animació que detecta el punt en què impacta amb el jugador, per fer-li perdre vida.
         public void OnAnimationConnect()
         {
             var health = _player.GetComponent<Health>();
             health.Decrement();
         }
 
+        //Esdeveniment d'animació que detecta el punt en què hauria de llençar el projectil, i crea la instància d'aquest
         public void OnAnimationThrow()
         {
             Vector2 spawnPosition = transform.position;
@@ -136,6 +148,7 @@ namespace Platformer.Mechanics
             _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
         }
 
+        //Mètode que comprova la direcció en la que mira l'enemic, per tal de fer que el projectil creat vagi en aquesta direcció
         private void CheckDirection()
         {
             //Vector3 forwardDirection = transform.right;
@@ -156,6 +169,9 @@ namespace Platformer.Mechanics
             }
         }
 
+        /*Mètode que gestiona la mort de l'enemic. Com que l'esdeveniment EnemyDeath del template no funciona del tot correctament, i en alguns
+         casos desprèn un error de referència nul.la, s'opta per utilitzar aquest mètode. Reproduim una animació i desactivem l'AnimationController
+        per, després d'1,5 segons Invocar el mètode que destrueix el gameObject de l'enemic.*/
         public void EnemyDeath()
         {
             _isDead = true;
