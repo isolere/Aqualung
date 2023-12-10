@@ -20,6 +20,8 @@ public class ApagaDialeg : MonoBehaviour
 
     void Start()
     {
+        CancelInvoke("DesactivarGameObject");
+        CancelInvoke("ObteAmulet");
         Invoke("DesactivarGameObject", desactivationTime);
         Invoke("ObteAmulet", desactivationTime - 8f);
     }

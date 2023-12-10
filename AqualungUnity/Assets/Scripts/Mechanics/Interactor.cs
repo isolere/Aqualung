@@ -18,10 +18,12 @@ public class Interactor : MonoBehaviour
         if (selected != null)
         {
             bool success = selected.Interact(gameObject);
-            if (success)
+            Debug.Log("Metode Interact.Selected = " + selected);
+
+           /* if (success)
             {
                 Unselect(selected.gameObject);
-            }
+            }*/
         }
     }
 
