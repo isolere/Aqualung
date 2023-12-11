@@ -345,6 +345,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8959862683291269159, guid: d61318deddcc056419d8aa5801d6548d,
+        type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -358,6 +363,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -458,6 +473,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -620,6 +645,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1865,6 +1900,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMusicVolumeUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 397850805470510781, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 551303543635590704, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1999,6 +2069,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEffectsVolumeUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918920460751311, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2140,6 +2245,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1150328358254411182, guid: f66323d5ec70596429c0de7639ac0a5d,
+        type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: 1150328358254411182, guid: f66323d5ec70596429c0de7639ac0a5d,
         type: 3}
       propertyPath: _inventory
@@ -135471,6 +135581,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -135583,6 +135703,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -135756,6 +135886,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -136050,6 +136190,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -138539,6 +138689,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -142038,8 +142198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model:
-    virtualCamera: {fileID: 1946717924}
-    player: {fileID: 1923336677}
+    virtualCamera: {fileID: 0}
+    player: {fileID: 0}
     spawnPoint: {fileID: 0}
     jumpModifier: 0.9
     jumpDeceleration: 0
@@ -142701,6 +142861,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -144309,6 +144479,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -144401,18 +144581,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 64945249}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1923336677 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5759328344552810815, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
-    type: 3}
-  m_PrefabInstance: {fileID: 579275697}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1929641320
 GameObject:
   m_ObjectHideFlags: 0
@@ -146833,6 +147001,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -146927,6 +147120,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049617578}
     m_Modifications:
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 6390940849099565519}
+    - target: {fileID: 562598917812258621, guid: c26557c6527f7a64ea8e70a15201c962,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayFontClip
+      objectReference: {fileID: 0}
     - target: {fileID: 1684510563964726121, guid: c26557c6527f7a64ea8e70a15201c962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -147026,6 +147229,11 @@ PrefabInstance:
       propertyPath: itemName
       value: Martell
       objectReference: {fileID: 0}
+    - target: {fileID: 1150328358254411182, guid: ff1d96b18d28a4f47aed19755e1d0af2,
+        type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: 1150328358254411182, guid: ff1d96b18d28a4f47aed19755e1d0af2,
         type: 3}
       propertyPath: _inventory
@@ -148302,6 +148510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
+      propertyPath: selectClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 071a5c5ed6186dd4885e470c0a5ba7ea, type: 3}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
       propertyPath: sliderMusic
       value: 
       objectReference: {fileID: 1862972318}
@@ -148310,6 +148523,11 @@ PrefabInstance:
       propertyPath: sliderEffects
       value: 
       objectReference: {fileID: 1752019491}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: interactFontClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 071a5c5ed6186dd4885e470c0a5ba7ea, type: 3}
     - target: {fileID: 8904768628811023302, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -148365,6 +148583,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46fb3de9dae37a54996adc83742b725f, type: 3}
+--- !u!114 &6390940849099565519 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6390940849099565518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87c93cf4fd0d347b549c448b1d7ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7278720312999216173
 PrefabInstance:
   m_ObjectHideFlags: 0

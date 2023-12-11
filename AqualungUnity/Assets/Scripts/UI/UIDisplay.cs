@@ -6,6 +6,7 @@ using Platformer.Mechanics;
 /**
  * Component per configurar la interficie d'usuari durant el joc.
  */
+/*Classe que gestiona la UI del joc, i els elements que s'hi mostren.*/
 public class UIDisplay : MonoBehaviour
 {
     [Header("Player Stats")] 
@@ -47,7 +48,8 @@ public class UIDisplay : MonoBehaviour
 
         _health.OnHealthChanged += UpdateHealth;
     }
-
+    /*Mètode per establir l'slider de la reserva d'aigua de la Nixie. Depenent dels fragments d'Aqualung que disposem, es mostrarà una 
+     o altra versió de la barra.*/
     public void SetHealthBar()
     {
         if (GameState.Instance.FragmentsAqualung == 1)
@@ -67,6 +69,7 @@ public class UIDisplay : MonoBehaviour
         healthSlider.value = healthSlider.maxValue;
     }
 
+    //Mètode que actualitzarà la barra de vida a partir dels increments o descensos en el nivell de salut del personatge
     void UpdateHealth(int amount)
     {
         int newHealth = _health.getCurrentHP;
@@ -88,6 +91,7 @@ public class UIDisplay : MonoBehaviour
         }*/
     }
 
+    //Mètode que actualitza la puntuació, basant-se en la informació proporcionada pel GameState
     void UpdateScore()
     {
         //scoreAnimation.Play();

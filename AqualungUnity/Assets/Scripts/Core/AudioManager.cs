@@ -16,8 +16,17 @@ public class AudioManager : MonoBehaviour
     [Header("SFX")] [SerializeField] private AudioClip hoverClip;
     [SerializeField] [Range(0f, 1f)] private float hoverVolume = 1f;
 
-    [SerializeField] private AudioClip selectClip;
-    [SerializeField] [Range(0f, 1f)] private float selectVolume = 1f;
+    [SerializeField] private AudioClip interactFontClip;
+    [SerializeField] [Range(0f, 1f)] private float fontVolume = 1f;
+    
+    [SerializeField] private AudioClip interactCanonadesClip;
+    [SerializeField] [Range(0f, 1f)] private float canonadesVolume = 1f;
+
+    [SerializeField] private AudioClip interactMissioClip;
+    [SerializeField][Range(0f, 1f)] private float missioVolume = 1f;
+
+    [SerializeField] private AudioClip interactNPCClip;
+    [SerializeField][Range(0f, 1f)] private float NPCVolume = 1f;
 
     [SerializeField] private AudioClip VictoryClip;
     
@@ -141,11 +150,25 @@ public class AudioManager : MonoBehaviour
         PlayClip(hoverClip, hoverVolume);
     }
 
-    public void PlaySelectClip()
+    public void PlayFontClip()
     {
-        PlayClip(selectClip, selectVolume);
+        PlayClip(interactFontClip, fontVolume);
     }
 
+    public void PlayCanonadaClip()
+    {
+        PlayClip(interactCanonadesClip, canonadesVolume);
+    }
+
+    public void PlayMissioClip()
+    {
+        PlayClip(interactMissioClip, missioVolume);
+    }
+
+    public void PlayNPCClip()
+    {
+        PlayClip(interactNPCClip, NPCVolume);
+    }
 
     public void PlayDefeatClip()
     {

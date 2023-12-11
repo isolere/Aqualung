@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1715bf1b7a5e8480aba89c75b75ce7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: 0.5
+  t: 0.1
   modulus: 0
   clip: {fileID: 8300000, guid: 7711a4c1305db5e498589e38b69902a6, type: 3}
 --- !u!1102 &-5009945742397230612

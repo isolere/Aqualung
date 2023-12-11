@@ -15,19 +15,21 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] private List<RequirementSO> requirements;
 
+    //Què succeeix quan un Interactor s'aproxima
     public void Select(GameObject selector)
     {
         Debug.Log("Interactua");
         OnSelect.Invoke();
 
     }
-
+    
+    //Què succeeix quan un Interactor s'allunya
     public void Unselect(GameObject selector)
     {
         OnUnselect.Invoke();
     }
 
-
+    //Què succeeix quan un Interactor Seleccionat Interactua amb l'Interactable
     public bool Interact(GameObject interactor)
     {
         if (ValidateRequirements(interactor))
@@ -44,6 +46,7 @@ public class Interactable : MonoBehaviour
         return true;
     }
 
+    //Mètode que valida si els requeriments es compleixen, i ho notifica
     private bool ValidateRequirements(GameObject gameObject)
     {
         foreach (RequirementSO requirement in requirements)

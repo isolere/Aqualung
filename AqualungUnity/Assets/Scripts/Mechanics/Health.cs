@@ -103,9 +103,11 @@ namespace Platformer.Mechanics
             _isAlreadyDead=false;
         }
 
-        void Awake()
+        void Start()
         {
-            currentHP = maxHP;
+            /*Al començar cada escena establim la vida al seu valor màxim. Comprovem si el GameState conté
+            fragments d'Aqualung, i afegim 2 punts a la vida màxima per cada fragment obtingut.*/
+            currentHP = maxHP+(GameState.Instance.FragmentsAqualung * 2);
             _animator = GetComponent<Animator>();
         }
     }
