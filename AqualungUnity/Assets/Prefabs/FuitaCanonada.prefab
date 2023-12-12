@@ -281,10 +281,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3779493027316610514}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e1e8e7acf7c88e04c9e2068dfe547d1c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a84d4eb511d91a4bb475ec656e05c7f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.311
   m_Pitch: 1
@@ -295,7 +295,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -305,7 +305,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.071582034
+      time: 0.6291763
       value: 0.99596786
       inSlope: -5.0019917
       outSlope: -5.0019917
@@ -314,8 +314,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.21147004
-      value: 0.3831482
+      time: 0.7743057
+      value: 0.17860413
       inSlope: -2.2487545
       outSlope: -2.2487545
       tangentMode: 0
@@ -323,17 +323,17 @@ AudioSource:
       inWeight: 0
       outWeight: 0.26187918
     - serializedVersion: 3
-      time: 0.4830597
-      value: 0.06866455
-      inSlope: -0.31262448
-      outSlope: -0.31262448
+      time: 0.8705109
+      value: 0.0030517578
+      inSlope: -0.053168077
+      outSlope: -0.053168077
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.7843732
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.026751712
+      value: 0
       inSlope: -0.041805748
       outSlope: -0.041805748
       tangentMode: 0
@@ -347,8 +347,17 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0.136
+      time: 0.5916252
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7644073
+      value: 1.0005478
       inSlope: 0
       outSlope: 0
       tangentMode: 0

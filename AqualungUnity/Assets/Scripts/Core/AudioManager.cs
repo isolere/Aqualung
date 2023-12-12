@@ -238,5 +238,12 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.SetFloat("effectsVolume", hoverVolume);
         PlayerPrefs.Save();
     }
-    
+
+    public void StopAudioSource(AudioSource audioSource)
+    {
+        audioSource.Stop();
+        audioSource.clip = null;
+    }
+
+
 }
