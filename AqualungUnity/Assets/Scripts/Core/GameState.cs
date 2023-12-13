@@ -23,12 +23,12 @@ public class GameState : MonoBehaviour
         set { _fragmentsAqualung=value; }
     }
     //Controlarem les canonades reparades durant el nivell 1
-    private int _canonadesReparades;
+   /* private int _canonadesReparades;
 
     public int CanonadesReparades
     {
         get {return _canonadesReparades;}
-    }
+    }*/
 
     private static GameState _instance;
 
@@ -62,7 +62,7 @@ public class GameState : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        _canonadesReparades = 0;
+        //_canonadesReparades = 0;
         _fragmentsAqualung = 0;
     }
 
@@ -79,11 +79,11 @@ public class GameState : MonoBehaviour
         if (OnScoreChanged != null) OnScoreChanged();
     }
     //Controlarem la quantitat de canonades reparades per l'objectiu de la missió del nivell 1
-    public void ReparaCanonada()
+    /*public void ReparaCanonada()
     {
         _canonadesReparades+=1;
         Debug.Log("Reparada= " + _canonadesReparades);
-    }
+    }*/
 
     public void Reset()
     {

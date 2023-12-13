@@ -9,6 +9,7 @@ TagManager:
   - Trito
   - ParticulesPlataforma
   - ParticulesProjectil
+  - Fuites
   layers:
   - Default
   - TransparentFX

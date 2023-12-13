@@ -6,10 +6,15 @@ using UnityEngine;
 public class RequirementPalancaSO : RequirementSO
 {
     [SerializeField] private int _canonadesOK;
+    private ReparaCanonades _reparaCanonades;
+    private GameObject _fuites;
 
     public override bool Validate(GameObject gameobject)
     {
-        if(GameState.Instance.CanonadesReparades>=_canonadesOK)
+        _fuites = GameObject.FindWithTag("Fuites");
+        _reparaCanonades = _fuites.GetComponent<ReparaCanonades>();
+
+        if(_reparaCanonades.CanonadesReparades>=_canonadesOK)
         {
             return true;
         }
@@ -21,6 +26,6 @@ public class RequirementPalancaSO : RequirementSO
 
     public override string GetErrorMessage()
     {
-        return $"Ncessites reparar {_canonadesOK} canonades per poder activar el mecanisme! ({GameState.Instance.CanonadesReparades} de {_canonadesOK})";
+        return $"Ncessites reparar {_canonadesOK} canonades per poder activar el mecanisme! ({_reparaCanonades.CanonadesReparades} de {_canonadesOK})";
     }
 }

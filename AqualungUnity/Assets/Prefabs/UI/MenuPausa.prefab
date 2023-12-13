@@ -3056,6 +3056,7 @@ GameObject:
   - component: {fileID: 7947960017645632815}
   - component: {fileID: 7320592615560461505}
   - component: {fileID: 1372503726328390805}
+  - component: {fileID: 5199704169390431129}
   m_Layer: 5
   m_Name: MenuPausa
   m_TagString: Untagged
@@ -3163,6 +3164,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &5199704169390431129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5998586100664571939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26936488c71b8a48a045999fd71d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6207697387795873494
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,10 +4277,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5032270541428757582, guid: 501a779747020c54a958ee0c3ef48f93,
-          type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadMainMenu
+      - m_Target: {fileID: 5199704169390431129}
+        m_TargetAssemblyTypeName: TornaMainMenu, Assembly-CSharp
+        m_MethodName: TornaMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
