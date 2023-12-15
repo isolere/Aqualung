@@ -72,7 +72,7 @@ namespace Platformer.Mechanics
                 if (move.x > 0) moveDirection = 1;
                 else if (move.x < 0) moveDirection = -1;
 
-                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                if (jumpState == JumpState.Grounded && CheckGround.isGrounded && Input.GetButtonDown("Jump"))
                     jumpState = JumpState.PrepareToJump;
                 else if (Input.GetButtonUp("Jump"))
                 {
