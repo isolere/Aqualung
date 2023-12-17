@@ -38,7 +38,7 @@ namespace Platformer.Mechanics
 
                 //Obtenim la direcció del jugador per poder-la traspassar al projectil instanciat.
                 playerDirection = PlayerController.moveDirection;
-                projectileDirection = playerDirection > 0 ? new Vector3(1f,.3f,0f) : new Vector3(-1f,.3f,0f);
+                projectileDirection = playerDirection > 0 ? new Vector3(1f,.2f,0f) : new Vector3(-1f,.2f,0f);
                 canUse = false;
                 Debug.Log("Vida= " + _health.getCurrentHP);
             }
