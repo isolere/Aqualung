@@ -42,7 +42,7 @@ namespace Platformer.Mechanics
             {
                 if (_inventory.Has("Amulet") == false)
                 {
-                    _health.Decrement();
+                    _health.Decrement(true);
                 }
                 item = Instantiate(itemPrefab, transform.position, Quaternion.identity);
                 canUse = false;

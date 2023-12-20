@@ -21,7 +21,7 @@ namespace Platformer.Mechanics
                 //Si l'inventari de la Nixie conté un objecte anomenat "Amulet" no perdrem reserva d'aigua
                 if (_inventory.Has("Amulet") == false)
                 {
-                    _health.Decrement();
+                    _health.Decrement(true);
                 }
 
                 /*Invoquem el mètode InstantiateItem, amb un delay de 0,3 segons. D'aquesta manera donem temps

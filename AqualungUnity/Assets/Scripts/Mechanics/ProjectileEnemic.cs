@@ -60,7 +60,7 @@ namespace Platformer.Mechanics
             // Si te salut apliquem el mal
             if (health != null && playerController != null)
             {
-                health.Decrement();
+                health.Decrement(false);
             }
             Destroy(gameObject);
         }

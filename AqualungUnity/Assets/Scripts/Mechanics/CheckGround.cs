@@ -22,7 +22,7 @@ public class CheckGround : MonoBehaviour
             //Verificar si l'enemic té vida
             if (health != null && enemyController != null)
             {
-                health.Decrement();
+                health.Decrement(false);
             }
             
         }

@@ -70,12 +70,15 @@ namespace Platformer.Mechanics
          evitar que es resti més vida, i aquesta no sigui correcta en cas de respawn. Si la vida del jugador és zero, cridem 
         l'esdeveniment HealthIsZero, que comprovarà si es tracta del jugador o un enemic, i procedirà a executar la mort del
         element concret.*/
-        public void Decrement()
+        public void Decrement(bool habilitat)
         {
             if (_isAlreadyDead == false)
             {
                 currentHP = Mathf.Clamp(currentHP - 1, 0, maxHP);
-                _animator.SetTrigger("hurt");
+                if (habilitat == false)
+                {
+                    _animator.SetTrigger("hurt");
+                }
                 if (currentHP == 0)
                 {
                     _isAlreadyDead = true;
@@ -93,7 +96,7 @@ namespace Platformer.Mechanics
         //Permet "matar" un gameObject, independentment de la quantitat de vida de la que disposi.
         public void Die()
         {
-            while (currentHP > 0) Decrement();
+            while (currentHP > 0) Decrement(false);
         }
 
         //Restablim la vida fins al seu valor màxim

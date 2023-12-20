@@ -73353,8 +73353,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 6.8622503, y: -3.0077, z: 0}
-    m_Extent: {x: 14.97395, y: 2.6325998, z: 0}
+    m_Center: {x: 6.8563995, y: -3.01505, z: 0}
+    m_Extent: {x: 14.9809, y: 2.63235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -75539,6 +75539,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 292457042}
     m_Modifications:
+    - target: {fileID: 772289407653213039, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: path
+      value: 
+      objectReference: {fileID: 1215244352}
+    - target: {fileID: 772289407653213039, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: distanciaRebot
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1577774018119691272, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
       propertyPath: m_FlipX
@@ -75598,6 +75608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyVirus (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677734941257531920, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76385,6 +76400,52 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 392028576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215244351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215244353}
+  - component: {fileID: 1215244352}
+  m_Layer: 0
+  m_Name: PatrolPath10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1215244352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215244351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b023ebe508a49c880fc00552f0dfc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: -2.3682766, y: 0}
+  endPosition: {x: -0.78639656, y: 0}
+--- !u!4 &1215244353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215244351}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.0012545064, w: 0.9999992}
+  m_LocalPosition: {x: 28.521, y: 8.197, z: 0.15429688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1815426855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.14400001}
 --- !u!1001 &1215987374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76673,8 +76734,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1262969859}
-  - component: {fileID: 1262969861}
   - component: {fileID: 1262969860}
+  - component: {fileID: 1262969861}
   m_Layer: 11
   m_Name: BackGroundCollider
   m_TagString: Untagged
@@ -76729,7 +76790,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007845521, y: -0.61582154}
+  m_Offset: {x: -0.008023739, y: -0.58133984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76740,7 +76801,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.043665648, y: 0.022522807}
+  m_Size: {x: 0.20928907, y: 0.054352045}
   m_EdgeRadius: 0
 --- !u!114 &1262969861
 MonoBehaviour:
@@ -79039,6 +79100,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3053599624445931882, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5759328344552810815, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
         type: 3}
       propertyPath: jumpAudio
@@ -79054,12 +79120,23 @@ PrefabInstance:
       propertyPath: respawnAudio
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5759328344552810815, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
+        type: 3}
+      propertyPath: triggerCollider
+      value: 
+      objectReference: {fileID: 1262969860}
+    - target: {fileID: 7934555719971438712, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8936573978472361314, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
         type: 3}
       propertyPath: m_Name
       value: PlayerOK
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3053599624445931882, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 724470784689038125, guid: 85a81f63e2b6b1247bcf2bf1f6f1016f,
@@ -81515,6 +81592,7 @@ Transform:
   m_Children:
   - {fileID: 1620406958}
   - {fileID: 353788238}
+  - {fileID: 1215244353}
   - {fileID: 1981112391}
   - {fileID: 667994222}
   - {fileID: 1379753724}
