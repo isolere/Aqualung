@@ -75,8 +75,9 @@ MonoBehaviour:
     servir les teves habilitats sense utilitzar la teva reserva d'aigua. Fes-lo servir
     per derrotar en Benzo i eliminar la seva influ\xE8ncia en el medi!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 888f8a15180dc4549802d3dffa527ee2, type: 2}
+  m_sharedMaterial: {fileID: 6974664795081430706, guid: 888f8a15180dc4549802d3dffa527ee2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -924,10 +925,37 @@ PrefabInstance:
       propertyPath: m_text
       value: Prem <E> per parlar
       objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -5.848755
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -7.801361
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949b26ba2831fd04a94430ce7d931ad7,
+        type: 2}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3187548840459440842, guid: 949b26ba2831fd04a94430ce7d931ad7,
+        type: 2}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
       propertyPath: m_text
-      value: "Aqua el trit\xF3"
+      value: Aqua el trito
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
@@ -936,12 +964,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
       propertyPath: m_fontSizeBase
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7968593822665607104, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
       propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916651, guid: c54aec23f85809f498cb7460b5d18df1,

@@ -71,8 +71,9 @@ MonoBehaviour:
     que una petita fuita que faci caure una gota d'aigua per segon suposa el desperdici
     de 30 litres d'aigua per dia?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 888f8a15180dc4549802d3dffa527ee2, type: 2}
+  m_sharedMaterial: {fileID: 6974664795081430706, guid: 888f8a15180dc4549802d3dffa527ee2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_margin: {x: 60.710114, y: 0, z: 174.41458, w: -13.395022}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!111 &2825208941743221600
@@ -783,10 +784,42 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4488858441546695614, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488858441546695614, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.027
+      objectReference: {fileID: 0}
     - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
       propertyPath: m_text
       value: Prem <E> per parlar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -12.585449
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 949b26ba2831fd04a94430ce7d931ad7,
+        type: 2}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3187548840459440842, guid: 949b26ba2831fd04a94430ce7d931ad7,
+        type: 2}
+    - target: {fileID: 6626296687596160777, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
@@ -805,12 +838,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
       propertyPath: m_fontSizeBase
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
         type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7968593822665607104, guid: 35336e8e39086894ca100fd307dc523d,
+        type: 2}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
       propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349076222724916645, guid: c54aec23f85809f498cb7460b5d18df1,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349076222724916650, guid: c54aec23f85809f498cb7460b5d18df1,

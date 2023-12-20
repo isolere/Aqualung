@@ -2728,10 +2728,10 @@ Material:
     - _FaceDilate: 0
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 0.05
-    - _GlowOffset: 0
+    - _GlowInner: 0.494
+    - _GlowOffset: 0.01
     - _GlowOuter: 0.05
-    - _GlowPower: 0.75
+    - _GlowPower: 0.669
     - _GradientScale: 6
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
@@ -2773,6 +2773,6 @@ Material:
     - _OutlineColor: {r: 0, g: 0.33890164, b: 1.4937825, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.48558202, g: 1.4151113, b: 3.3207548, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
