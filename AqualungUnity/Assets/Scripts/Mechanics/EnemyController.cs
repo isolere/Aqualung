@@ -47,6 +47,8 @@ namespace Platformer.Mechanics
         private bool _isDead;
         private bool _outOfRange;
 
+        private Rigidbody2D _rigidbody;
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
@@ -57,6 +59,8 @@ namespace Platformer.Mechanics
             _animator = GetComponent<Animator>();
             _isDead = false;
             _outOfRange = true;
+            _rigidbody = GetComponent<Rigidbody2D>();
+
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -136,7 +140,7 @@ namespace Platformer.Mechanics
         public void OnAnimationConnect()
         {
             var health = _player.GetComponent<Health>();
-            health.Decrement();
+            health.Decrement(false);
         }
 
         //Esdeveniment d'animació que detecta el punt en què hauria de llençar el projectil, i crea la instància d'aquest
@@ -177,7 +181,8 @@ namespace Platformer.Mechanics
             _isDead = true;
             Debug.Log("Enemic mort");
             _animator.SetTrigger("death");
-            //_collider.enabled = false;
+            _rigidbody.simulated = false;
+            _collider.enabled = false;
             control.enabled = false;
             Invoke("DestroyBody",1.5f);
         }

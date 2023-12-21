@@ -25,13 +25,14 @@ namespace Platformer.Gameplay
         public override void Execute()
         {
             var willHurtEnemy = player.Bounds.center.y >= enemy.Bounds.max.y;
+            var awayFromPlayer = enemy.Bounds.center.y >= player.Bounds.max.y;
 
             if (willHurtEnemy)
             {
                 var enemyHealth = enemy.GetComponent<Health>();
                 if (enemyHealth != null)
                 {
-                    enemyHealth.Decrement();
+                    enemyHealth.Decrement(false);
                     player.Bounce(4);
                 }
                 /*Aquest condicional només es reprodueix si l'enemic no té component Health. En el nostre cas no hauria
@@ -42,12 +43,25 @@ namespace Platformer.Gameplay
                     player.Bounce(2);
                 }
             }
+            else if (awayFromPlayer)
+            {
+                if (enemy.control.spriteRenderer.flipX == false)
+                {
+                    Vector2 direccioRebot = new Vector2(4f, 5f);
+                    enemy.control.Bounce(direccioRebot);
+                }
+                else
+                {
+                    Vector2 direccioRebot = new Vector2(-4f, 5f);
+                    enemy.control.Bounce(direccioRebot);   
+                }
+            }
             /*Ja que el jugador té un component Health, i no mor amb un únic impacte, accedim a la seva vida i la disminuim 
              en 1 punt.*/
             else
             {
                 var playerHealth = player.GetComponent<Health>();
-                playerHealth.Decrement();
+                playerHealth.Decrement(false);
                 Debug.Log("Vida: " + playerHealth.getCurrentHP);
             }
         }

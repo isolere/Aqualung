@@ -76,7 +76,7 @@ namespace Platformer.Mechanics
             // Si te salut apliquem el mal
             if (health != null && enemyController != null)
             {
-                health.Decrement();
+                health.Decrement(false);
             }
             //Situem el sistema de partícules a la posició de l'impacte i l'executem.
             _particules.transform.position = transform.position;
