@@ -31,20 +31,10 @@ namespace Platformer.UI
         private GameObject _player;
         private PlayerController _playerController;
 
-        public Transform desti;
-        public float speed = 2f;
-
         void Awake()
         {
             _player = GameObject.FindWithTag("Player");
             _playerController = _player.GetComponent<PlayerController>();
-        }
-
-        private void Start()
-        {
-            //Time.timeScale = 0;
-            _playerController.enabled = false;
-            IntroNivell();
         }
 
         void OnEnable()
@@ -90,21 +80,6 @@ namespace Platformer.UI
             {
                 ToggleMainMenu(show: !showMainCanvas);
             }
-        }
-
-        void IntroNivell()
-        {
-            StartCoroutine(Desplacament());
-        }
-
-        IEnumerator Desplacament()
-        {
-            while (_player.transform.position != desti.position)
-            {
-                _player.transform.position = Vector3.MoveTowards(_player.transform.position, desti.position, speed * Time.deltaTime);
-                yield return null;
-            }
-            _playerController.enabled = true;
         }
     }
 }
