@@ -12,6 +12,7 @@ TagManager:
   - Fuites
   - UI
   - LimitPantalla
+  - PiscinaAigua
   layers:
   - Default
   - TransparentFX

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8120508935656977793}
   - component: {fileID: 7328658538778602890}
   - component: {fileID: 377431610394842364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiscinaMissioLvl1
-  m_TagString: Untagged
+  m_TagString: PiscinaAigua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

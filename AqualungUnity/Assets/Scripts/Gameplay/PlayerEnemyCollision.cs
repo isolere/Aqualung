@@ -29,6 +29,10 @@ namespace Platformer.Gameplay
 
             if (willHurtEnemy)
             {
+                Vector2 contactPoint = new Vector2(player.Bounds.center.x, enemy.Bounds.max.y);
+                model.particlesImpacte.transform.position = contactPoint;
+                model.particlesImpacte.Play();
+
                 var enemyHealth = enemy.GetComponent<Health>();
                 if (enemyHealth != null)
                 {
