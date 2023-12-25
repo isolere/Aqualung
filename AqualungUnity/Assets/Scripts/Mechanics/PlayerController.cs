@@ -56,7 +56,7 @@ namespace Platformer.Mechanics
         {
             health = GetComponent<Health>();
             audioSource = GetComponent<AudioSource>();
-            //collider2d = GetComponent<Collider2D>();
+            collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
             _projectilAigua = GetComponent<ProjectilAigua>();
@@ -66,6 +66,14 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
+            if(CheckGround.onWater)
+            {
+                animator.SetBool("OnWater", true);
+            }
+            else if(!CheckGround.onWater)
+            {
+                animator.SetBool("OnWater", false);
+            }
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
