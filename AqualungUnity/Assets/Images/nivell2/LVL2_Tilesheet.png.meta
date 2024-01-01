@@ -197,10 +197,10 @@ TextureImporter:
       name: LVL2_Tilesheet_9
       rect:
         serializedVersion: 2
-        x: 293
-        y: 3015
-        width: 2081
-        height: 1082
+        x: 280
+        y: 3135
+        width: 2916
+        height: 1163
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: LVL2_Tilesheet_26
       rect:
         serializedVersion: 2
-        x: 248
+        x: 34
         y: 2185
-        width: 1680
-        height: 823
+        width: 2257
+        height: 924
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1420,7 +1420,7 @@ TextureImporter:
         width: 314
         height: 405
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1441,7 +1441,7 @@ TextureImporter:
         width: 313
         height: 390
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1462,7 +1462,7 @@ TextureImporter:
         width: 252
         height: 390
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
