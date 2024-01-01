@@ -3530,6 +3530,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3986445301906061530, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3986445302543120002, guid: a0ac274e7ecc1364dafc224c4af5861b,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3538,6 +3543,26 @@ PrefabInstance:
     - target: {fileID: 3986445302543120002, guid: a0ac274e7ecc1364dafc224c4af5861b,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495622739470846850, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495622739908740570, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495622739908740570, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933865805126476181, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8181955572962576957, guid: a0ac274e7ecc1364dafc224c4af5861b,
@@ -3553,6 +3578,21 @@ PrefabInstance:
     - target: {fileID: 8181955572962576957, guid: a0ac274e7ecc1364dafc224c4af5861b,
         type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825174061551701722, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825174061551701722, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825174062125678722, guid: a0ac274e7ecc1364dafc224c4af5861b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -85053,7 +85093,7 @@ EdgeCollider2D:
   - {x: 4.507455, y: 0.38575852}
   - {x: 4.514163, y: 0.0953598}
   - {x: 4.513092, y: -0.50878054}
-  - {x: 19.779531, y: -0.6753992}
+  - {x: 19.807137, y: -0.5235641}
   - {x: 19.755278, y: 3.4180145}
   - {x: 18.51581, y: 3.3888154}
   - {x: 18.32235, y: 2.5478086}
