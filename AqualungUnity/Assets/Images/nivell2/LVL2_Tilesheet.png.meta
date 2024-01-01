@@ -197,10 +197,10 @@ TextureImporter:
       name: LVL2_Tilesheet_9
       rect:
         serializedVersion: 2
-        x: 122
-        y: 2162
-        width: 3576
-        height: 2004
+        x: 293
+        y: 3015
+        width: 2081
+        height: 1082
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: LVL2_Tilesheet_26
       rect:
         serializedVersion: 2
-        x: 4454
-        y: 98
-        width: 3496
-        height: 1744
+        x: 248
+        y: 2185
+        width: 1680
+        height: 823
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,8 +1163,8 @@ TextureImporter:
       name: LVL2_Tilesheet_51
       rect:
         serializedVersion: 2
-        x: 257
-        y: 4193
+        x: 250
+        y: 4295
         width: 212
         height: 118
       alignment: 0
@@ -1184,8 +1184,8 @@ TextureImporter:
       name: LVL2_Tilesheet_52
       rect:
         serializedVersion: 2
-        x: 619
-        y: 4194
+        x: 622
+        y: 4292
         width: 217
         height: 104
       alignment: 0
@@ -1328,27 +1328,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LVL2_Tilesheet_58
-      rect:
-        serializedVersion: 2
-        x: 4757
-        y: 5041
-        width: 426
-        height: 134
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da149cbde1ffec649990f19257b77449
-      internalID: -1173304553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: LVL2_Tilesheet_59
       rect:
         serializedVersion: 2
@@ -1373,10 +1352,10 @@ TextureImporter:
       name: LVL2_Tilesheet_60
       rect:
         serializedVersion: 2
-        x: 4276
-        y: 4752
-        width: 328
-        height: 161
+        x: 4126
+        y: 4613
+        width: 451
+        height: 483
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1394,10 +1373,10 @@ TextureImporter:
       name: LVL2_Tilesheet_61
       rect:
         serializedVersion: 2
-        x: 4623
-        y: 4766
-        width: 330
-        height: 163
+        x: 4616
+        y: 4579
+        width: 624
+        height: 642
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1415,10 +1394,10 @@ TextureImporter:
       name: LVL2_Tilesheet_62
       rect:
         serializedVersion: 2
-        x: 4965
-        y: 4750
-        width: 341
-        height: 174
+        x: 4667
+        y: 4365
+        width: 377
+        height: 196
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1428,6 +1407,69 @@ TextureImporter:
       bones: []
       spriteID: 9a13bd2834021f14aa107c0d305f8d2e
       internalID: 752850535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_58
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 321
+        width: 314
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35077ae19336b1e479354206512e28b3
+      internalID: -1173304553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_63
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 331
+        width: 313
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5807e026b96014f9e2df85718e2c9f
+      internalID: 1184856819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LVL2_Tilesheet_64
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 331
+        width: 252
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb83160ce05af9459142c832d527a15
+      internalID: 895890785
       vertices: []
       indices: 
       edges: []
@@ -1504,6 +1546,7 @@ TextureImporter:
       LVL2_Tilesheet_61: -1240913707
       LVL2_Tilesheet_62: 752850535
       LVL2_Tilesheet_63: 1184856819
+      LVL2_Tilesheet_64: 895890785
       LVL2_Tilesheet_7: -866978449
       LVL2_Tilesheet_8: 416015195
       LVL2_Tilesheet_9: -80260984
