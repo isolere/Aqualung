@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
         LoadLevel(level.sceneName);
     }
 
+    public static void LoadCurrentLevel()
+    {
+        var currentLevel= GameState.Instance.CurrentLevel;
+        var level = Instance.gameLevels.Levels[currentLevel];
+
+        LoadLevel(level.sceneName);
+    }
+
     public static void LoadMainMenu()
     {
         LoadLevel(Instance.mainMenu);
