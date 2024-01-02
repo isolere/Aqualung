@@ -40,11 +40,11 @@ public class IntroEscena : MonoBehaviour
     void Start()
     {
         _uiHealthBar= _uiCanvas.transform.Find("HealthBarAnim");
-        _uiScore= _uiCanvas.transform.Find("Score");
+        //_uiScore= _uiCanvas.transform.Find("Score");
         _uiMission= _uiCanvas.transform.Find("Mission");
 
         _uiHealthBar.gameObject.SetActive(false);
-        _uiScore.gameObject.SetActive(false);
+        //_uiScore.gameObject.SetActive(false);
         //_uiMission.gameObject.SetActive(false);
 
         _limitPantalla.SetActive(false);
@@ -102,7 +102,7 @@ public class IntroEscena : MonoBehaviour
         explicacio2.SetActive(false);
 
         _uiHealthBar.gameObject.SetActive(true);
-        _uiScore.gameObject.SetActive(true);
+        //_uiScore.gameObject.SetActive(true);
 
         //_uiMission.gameObject.SetActive(true);
         _uiMission.gameObject.GetComponent<Animation>().Play();
