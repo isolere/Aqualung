@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: ccdf655d0ed48294aa0ca3a7aea5298d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 484
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29f88968d6bcc24aa7aad6facfaa4ba
+      internalID: 1444275954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 84
+        height: 484
+      alignment: 9
+      pivot: {x: 0.21, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e140c9b0d6f9940b5d704a7c89b616
+      internalID: -1893437465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 79
+        height: 484
+      alignment: 9
+      pivot: {x: 0.185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d25f0fd067acb4cbeaf080a38cb9ab
+      internalID: -991736471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.18, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91795dd11f9e2b644a63e6e9cb074670
+      internalID: -1012566340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 80
+        height: 484
+      alignment: 9
+      pivot: {x: 0.181, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8b80c2198b2a54d945372eb5aee5e8
+      internalID: 1512829575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_5
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.19, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e80781d5ad213c4aa9ea1bdcd7ece6c
+      internalID: -1210129394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.202, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e0809dbb7e8e646ab8bbd2bb1d2397
+      internalID: 1479055855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_7
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.1899235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d45e7b07195ff64fb1127f4cdcece8b
+      internalID: 1445441374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_8
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 0
+        width: 80
+        height: 484
+      alignment: 9
+      pivot: {x: 0.205, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081fe7438217ef74780cefb79c3a5ceb
+      internalID: -1979847030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_9
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.215, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a806c993842cbe2498fca17a9eec8eeb
+      internalID: 1315010470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_10
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 0
+        width: 88
+        height: 484
+      alignment: 9
+      pivot: {x: 0.21, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2baca970e854c34d81bd57def7af3d1
+      internalID: 170640745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_11
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86a9cdafbb7f16439ebfb134eaa41a4
+      internalID: 275033830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_12
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 0
+        width: 81
+        height: 484
+      alignment: 9
+      pivot: {x: 0.1899235, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52e3d72a84a7e247a5a87ed84de8def
+      internalID: 468523506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transicio_arreglarCanonada_13
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 0
+        width: 41
+        height: 485
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106888a2f529af64189712e52a9ae567
+      internalID: 368358413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      transicio_arreglarCanonada_0: 1444275954
+      transicio_arreglarCanonada_1: -1893437465
+      transicio_arreglarCanonada_10: 170640745
+      transicio_arreglarCanonada_11: 275033830
+      transicio_arreglarCanonada_12: 468523506
+      transicio_arreglarCanonada_13: 368358413
+      transicio_arreglarCanonada_2: -991736471
+      transicio_arreglarCanonada_3: -1012566340
+      transicio_arreglarCanonada_4: 1512829575
+      transicio_arreglarCanonada_5: -1210129394
+      transicio_arreglarCanonada_6: 1479055855
+      transicio_arreglarCanonada_7: 1445441374
+      transicio_arreglarCanonada_8: -1979847030
+      transicio_arreglarCanonada_9: 1315010470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
