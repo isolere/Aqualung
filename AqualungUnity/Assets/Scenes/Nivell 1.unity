@@ -78044,6 +78044,18 @@ Transform:
   - {fileID: 1133524305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164817891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5032270541428757582, guid: 501a779747020c54a958ee0c3ef48f93,
+    type: 3}
+  m_PrefabInstance: {fileID: 7976069695751394242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f95a797ef629a4cbed727282cfd818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &1170972289 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 8592475880298083456, guid: 71377e5524b149c40a46c8f5f1cb3e50,
@@ -86468,11 +86480,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1164817891}
     - target: {fileID: 551303543635590704, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TornaMenu
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 551303543635590704, guid: 490d32d577ae757469ca6173fd4f1734,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 970590798868679368, guid: 490d32d577ae757469ca6173fd4f1734,
         type: 3}
