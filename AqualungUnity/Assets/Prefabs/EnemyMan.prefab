@@ -212,7 +212,7 @@ MonoBehaviour:
   distanciaDeteccio: 4
   distanciaAtac: 2
   _cooldown: 1.5
-  _projectilePrefab: {fileID: 7232365690509895181, guid: 48856d47dc93ef3428f2218b2bc68980,
+  _projectilePrefab: {fileID: 7232365690509895181, guid: 06db2ee04a3fbe84d8bcbbe47270e237,
     type: 3}
 --- !u!82 &5843668731025413174
 AudioSource:

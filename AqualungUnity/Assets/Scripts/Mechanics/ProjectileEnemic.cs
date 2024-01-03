@@ -10,7 +10,8 @@ namespace Platformer.Mechanics
      la seva direcció i velocitat, així com les col.lisions amb d'altres elements.*/
     public class ProjectileEnemic : MonoBehaviour
     {
-        //[SerializeField] private GameObject impactPrefab;
+        [SerializeField] private GameObject impactPrefab;
+
         [SerializeField] private AudioClip impactSound;
 
         [SerializeField] private float speed;
@@ -51,8 +52,8 @@ namespace Platformer.Mechanics
 
             AudioManager.Instance.PlayClip(impactSound);
 
-            /*GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
-            Destroy(FX, 2f);*/
+            GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
+            Destroy(FX, 2f);
 
             Health health = other.gameObject.GetComponent<Health>();
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
