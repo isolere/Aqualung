@@ -717,8 +717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 3986445301906061529}
-  healthSliderUnFrag: {fileID: 0}
-  healthSliderDosFrag: {fileID: 0}
+  healthSliderUnFrag: {fileID: 5547024708920313926}
+  healthSliderDosFrag: {fileID: 7169287835530763560}
   reservaAigua: {fileID: 3845702141119304220}
   _health: {fileID: 0}
   scoreText: {fileID: 445375359938745525}
@@ -2371,6 +2371,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6db8023c94afb4641a8568f7cf98c942, type: 3}
+--- !u!114 &5547024708920313926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2159601429672511908, guid: 6db8023c94afb4641a8568f7cf98c942,
+    type: 3}
+  m_PrefabInstance: {fileID: 5837385966121959906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5547024708920313927 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2159601429672511909, guid: 6db8023c94afb4641a8568f7cf98c942,
@@ -2587,6 +2599,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6db8023c94afb4641a8568f7cf98c942, type: 3}
+--- !u!114 &7169287835530763560 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2159601429672511908, guid: 6db8023c94afb4641a8568f7cf98c942,
+    type: 3}
+  m_PrefabInstance: {fileID: 9117008870988403852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7169287835530763561 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2159601429672511909, guid: 6db8023c94afb4641a8568f7cf98c942,

@@ -26,6 +26,8 @@ public class IntroEscena : MonoBehaviour
     private Transform _uiScore;
     private Transform _uiMission;
 
+    private bool _executant = false;
+
     void Awake()
     {
         _player = GameObject.FindWithTag("Player");
@@ -54,6 +56,8 @@ public class IntroEscena : MonoBehaviour
 
     IEnumerator Desplacament()
     {
+        _executant = true;
+
         speed = 2f;
         _animator.SetBool("grounded",true);
         _animator.SetFloat("velocityX", 1f);
@@ -109,5 +113,30 @@ public class IntroEscena : MonoBehaviour
         
         _limitPantalla.SetActive(true);
         _playerController.enabled = true;
+        _executant = false;
+    }
+
+    private void SaltaIntro()
+    {
+        _player.transform.position = desti.position;
+        _uiHealthBar.gameObject.SetActive(true);
+        _uiMission.gameObject.GetComponent<Animation>().Play();
+        explicacio1.SetActive(false);
+        explicacio2.SetActive(false);
+        _limitPantalla.SetActive(true);
+        _playerController.enabled = true;
+        _mainCamera.transform.position = _camInitPosition;
+        _mainCamera.GetComponent<CinemachineBrain>().enabled = true;
+
+        _executant = false;
+        StopAllCoroutines();
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown && _executant == true)
+        {
+            SaltaIntro();
+        }
     }
 }

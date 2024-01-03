@@ -18,12 +18,14 @@ public class GameManager : MonoBehaviour
     [Header("Menus")] [SerializeField] private string mainMenu = "MainMenu";
     [SerializeField] private string gameOver = "GameOver";
     [SerializeField] private string victory = "Victory";
+    [SerializeField] private string intro = "Introduccio";
 
     [Header("Load Delays")] [SerializeField]
     private float sceneLoadDelay = 2f;
 
     [SerializeField] private float sceneDefeatDelay = 5f;
     [SerializeField] private float sceneVictoryDelay = 5f;
+    [SerializeField] private float sceneIntroDelay = 3f;
 
 
     [Header("Levels")] [SerializeField] private GameLevelsSO gameLevels;
@@ -90,6 +92,12 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.StopTrack();
         Instance.StartCoroutine(Instance.DelayedLoadLevel(Instance.victory, Instance.sceneVictoryDelay));
+    }
+
+    public static void LoadIntro()
+    {
+        AudioManager.Instance.StopTrack();
+        Instance.StartCoroutine(Instance.DelayedLoadLevel(Instance.intro, Instance.sceneIntroDelay));
     }
 
     /*Aquest mètode utilitza una corutina per carregar el nivell corresponent del joc després d'un cert període
