@@ -13,6 +13,7 @@ namespace Platformer.Mechanics
         [SerializeField] private float duration=5.0f;
         private GameObject _particleObject;
         private ParticleSystem _particules;
+        private Animator _animator;
 
         private float remainingTime;
 
@@ -26,6 +27,8 @@ namespace Platformer.Mechanics
             //Busquem el sistema de partícules que es reproduirà quan la plataforma s'elimini.
             _particleObject = GameObject.FindWithTag("ParticulesPlataforma");
             _particules = _particleObject.GetComponent<ParticleSystem>();
+            _animator = GetComponent<Animator>();
+            _animator.SetTrigger("Spawn");
         }
 
         /*Al mètode Update anirem disminuint el valor de remainingTime fins que aquest arribi a zero. En aquest

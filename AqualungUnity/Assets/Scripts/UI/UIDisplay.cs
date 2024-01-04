@@ -21,6 +21,10 @@ public class UIDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI missionText;
 
+    [SerializeField] private Slider healthSliderBenzo;
+    [SerializeField] private Health _healthBenzo;
+
+
     private LevelManager _levelManager;
 
     //[Header("Animations")] 
@@ -46,7 +50,11 @@ public class UIDisplay : MonoBehaviour
         
         scoreText.text = GameState.Instance.GetScore().ToString();
 
+        healthSliderBenzo.maxValue = _healthBenzo.maxHP;
+        healthSliderBenzo.value = healthSliderBenzo.maxValue;
+
         _health.OnHealthChanged += UpdateHealth;
+        _healthBenzo.OnHealthChanged += UpdateHealthBenzo;
     }
     /*Mètode per establir l'slider de la reserva d'aigua de la Nixie. Depenent dels fragments d'Aqualung que disposem, es mostrarà una 
      o altra versió de la barra.*/
@@ -89,6 +97,13 @@ public class UIDisplay : MonoBehaviour
         {
             healthAnimation.Play();
         }*/
+    }
+
+    void UpdateHealthBenzo(int amount)
+    {
+        int newHealth = _healthBenzo.getCurrentHP;
+
+        healthSliderBenzo.value = newHealth;
     }
 
     //Mètode que actualitza la puntuació, basant-se en la informació proporcionada pel GameState
