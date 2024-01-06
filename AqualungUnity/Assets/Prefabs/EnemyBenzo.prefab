@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 772289407653213039}
   - component: {fileID: 5843668731025413174}
   - component: {fileID: -1153350640022412425}
+  - component: {fileID: 7763898943077503374}
   m_Layer: 9
   m_Name: EnemyBenzo
   m_TagString: Enemic
@@ -34,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.508, y: 1.27, z: 1}
-  m_LocalScale: {x: 1.2917, y: 1.2917, z: 1.2917}
+  m_LocalScale: {x: 1.1547657, y: 1.0970274, z: 1.1547657}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -171,8 +172,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015777858, y: -0.070482805}
-  m_Size: {x: 0.5145127, y: 1.8436623}
+  m_Offset: {x: -0.008960835, y: -0.058523014}
+  m_Size: {x: 0.5281468, y: 1.8675814}
   m_Direction: 0
 --- !u!114 &2651140156555518892
 MonoBehaviour:
@@ -210,9 +211,10 @@ MonoBehaviour:
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: b92a1a01b6d1fcc4e98c80c55df5c562, type: 3}
   distanciaDeteccio: 7.1
-  distanciaAtac: 2
-  _cooldown: 1.5
-  _projectilePrefab: {fileID: 0}
+  distanciaAtac: 4
+  _cooldown: 2
+  _projectilePrefab: {fileID: 7232365690509895181, guid: 4eeeed11f155c3b4bb87e7f650f170e6,
+    type: 3}
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -323,3 +325,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 20
   reservaAigua: 0
+--- !u!114 &7763898943077503374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661912868639658944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146e213d0f7897b40be1ff5bb7f1f37e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaAtac: 5.74
+  _cooldown: 10
+  specialAttackPrefab: {fileID: 7232365690509895181, guid: fdcfac0d6169be3479c2a41752fefe2d,
+    type: 3}
+  startPointObject: {fileID: 0}
+  endPointObject: {fileID: 0}
+  plataformesCova: []
+  point1: {fileID: 0}
+  point2: {fileID: 0}
+  point3: {fileID: 0}
+  point4: {fileID: 0}
+  plataformaCovaPrefab: {fileID: 0}

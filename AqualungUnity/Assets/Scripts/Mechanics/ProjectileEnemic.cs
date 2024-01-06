@@ -20,9 +20,12 @@ namespace Platformer.Mechanics
 
         private Vector3 _direction;
 
+        private SpriteRenderer _spriteRenderer;
+
         private void Awake()
         {
             _enemyController = FindObjectOfType<EnemyController>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         /*Quan el projectil ha estat instanciat, obtenim la direcció en què s'ha de desplaçar, a partir de la
@@ -30,6 +33,11 @@ namespace Platformer.Mechanics
         private void Start()
         {
             _direction = _enemyController.ProjectileDirection;
+            
+            if (_direction.x < 0)
+            {
+                _spriteRenderer.flipX = !_spriteRenderer.flipX;
+            }
             Debug.Log("Direction: " + _direction);
         }
 
@@ -58,11 +66,19 @@ namespace Platformer.Mechanics
             Health health = other.gameObject.GetComponent<Health>();
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
 
+            AtacEspecialBenzo benzo = other.gameObject.GetComponent<AtacEspecialBenzo>();
+
             // Si te salut apliquem el mal
             if (health != null && playerController != null)
             {
                 health.Decrement(false);
             }
+
+            if (health != null && benzo != null)
+            {
+                health.Decrement(false);
+            }
+
             Destroy(gameObject);
         }
     }

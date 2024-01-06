@@ -27,7 +27,7 @@ namespace Platformer.Gameplay
             var willHurtEnemy = player.Bounds.center.y >= enemy.Bounds.max.y;
             var awayFromPlayer = enemy.Bounds.center.y >= player.Bounds.max.y;
 
-            if (willHurtEnemy)
+            if (willHurtEnemy && enemy.GetComponent<AtacEspecialBenzo>() == null)
             {
                 Vector2 contactPoint = new Vector2(player.Bounds.center.x, enemy.Bounds.max.y);
                 model.particlesImpacte.transform.position = contactPoint;
