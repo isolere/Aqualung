@@ -50,11 +50,15 @@ public class UIDisplay : MonoBehaviour
         
         scoreText.text = GameState.Instance.GetScore().ToString();
 
-        healthSliderBenzo.maxValue = _healthBenzo.maxHP;
-        healthSliderBenzo.value = healthSliderBenzo.maxValue;
+        if (_healthBenzo != null)
+        {
+            healthSliderBenzo.maxValue = _healthBenzo.maxHP;
+            healthSliderBenzo.value = healthSliderBenzo.maxValue;
+
+            _healthBenzo.OnHealthChanged += UpdateHealthBenzo;
+        }
 
         _health.OnHealthChanged += UpdateHealth;
-        _healthBenzo.OnHealthChanged += UpdateHealthBenzo;
     }
     /*Mètode per establir l'slider de la reserva d'aigua de la Nixie. Depenent dels fragments d'Aqualung que disposem, es mostrarà una 
      o altra versió de la barra.*/
