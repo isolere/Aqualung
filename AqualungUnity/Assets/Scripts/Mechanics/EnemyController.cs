@@ -37,7 +37,7 @@ namespace Platformer.Mechanics
         [SerializeField] private GameObject _projectilePrefab;
         private GameObject projectile;
 
-        private int moveDirection;
+        public int moveDirection;
         private Vector3 _projectileDirection;
         public Vector3 ProjectileDirection
         {
@@ -125,6 +125,7 @@ namespace Platformer.Mechanics
             /*CheckDirection();
             _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
             Debug.Log("Projectile Direction: " + _projectileDirection);*/
+
         }
 
         //Mostra a l'escena un Gizmo amb la distància de detecció i la d'atac.
@@ -146,10 +147,17 @@ namespace Platformer.Mechanics
         //Esdeveniment d'animació que detecta el punt en què hauria de llençar el projectil, i crea la instància d'aquest
         public void OnAnimationThrow()
         {
-            Vector2 spawnPosition = transform.position;
-            projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
             CheckDirection();
             _projectileDirection = moveDirection > 0 ? new Vector3(1f, .3f, 0f) : new Vector3(-1f, .3f, 0f);
+            Debug.Log("Projectileirection= " + _projectileDirection);
+
+            Vector2 spawnPosition = transform.position;
+            projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
+
+            ProjectileEnemic projectilEnemic = projectile.GetComponent<ProjectileEnemic>();
+            projectilEnemic._direction = _projectileDirection;
+
+            //projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
         }
 
         //Mètode que comprova la direcció en la que mira l'enemic, per tal de fer que el projectil creat vagi en aquesta direcció

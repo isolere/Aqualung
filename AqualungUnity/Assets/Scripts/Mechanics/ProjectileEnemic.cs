@@ -18,7 +18,7 @@ namespace Platformer.Mechanics
 
         private EnemyController _enemyController;
 
-        private Vector3 _direction;
+        public Vector3 _direction;
 
         private SpriteRenderer _spriteRenderer;
 
@@ -32,7 +32,7 @@ namespace Platformer.Mechanics
          direcció de l'enemic que l'ha generat.*/
         private void Start()
         {
-            _direction = _enemyController.ProjectileDirection;
+            //_direction = _enemyController.ProjectileDirection;
             
             if (_direction.x < 0)
             {
@@ -56,8 +56,6 @@ namespace Platformer.Mechanics
         acabar, destruim la instància del projectil.*/
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Impacte:" + other);
-
             AudioManager.Instance.PlayClip(impactSound);
 
             GameObject FX = Instantiate(impactPrefab, transform.position, transform.rotation);
