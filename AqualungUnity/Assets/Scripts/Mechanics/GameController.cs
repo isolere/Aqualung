@@ -25,7 +25,7 @@ namespace Platformer.Mechanics
             Instance = this;
         }
 
-        void OnDisable()
+    void OnDisable()
         {
             if (Instance == this) Instance = null;
         }

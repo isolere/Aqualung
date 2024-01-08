@@ -53,7 +53,7 @@ namespace Platformer.Mechanics
         //Mètode que comprova si el nivell d'aigua de la Nixie es troba per sobre de la seva reserva.
         protected bool checkWaterReserve()
         {
-            if (_health.getCurrentHP <= _health.reservaAigua)
+            if (_health.getCurrentHP <= _health.reservaAigua && _inventory.Has("Amulet") == false)
             {
                 NotificationManager.Instance.ShowNotification("Reserva d'aigua insuficient");
                 return false;

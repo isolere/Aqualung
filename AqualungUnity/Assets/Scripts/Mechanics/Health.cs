@@ -110,7 +110,16 @@ namespace Platformer.Mechanics
         {
             /*Al començar cada escena establim la vida al seu valor màxim. Comprovem si el GameState conté
             fragments d'Aqualung, i afegim 2 punts a la vida màxima per cada fragment obtingut.*/
-            currentHP = maxHP+(GameState.Instance.FragmentsAqualung * 2);
+
+            PlayerController playerController = GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                currentHP = maxHP + (GameState.Instance.FragmentsAqualung * 2);
+            }
+            else
+            {
+                currentHP = maxHP;
+            }
             _animator = GetComponent<Animator>();
         }
     }

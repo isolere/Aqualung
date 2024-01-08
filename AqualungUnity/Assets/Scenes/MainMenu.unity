@@ -5265,6 +5265,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
+      propertyPath: fadeSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: VictoryClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f3363b5a9f79d74daa5a55fcc2a764d, type: 3}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
       propertyPath: sliderMusic
       value: 
       objectReference: {fileID: 914910501}
@@ -5273,6 +5283,21 @@ PrefabInstance:
       propertyPath: sliderEffects
       value: 
       objectReference: {fileID: 609864668}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: interactFontClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 071a5c5ed6186dd4885e470c0a5ba7ea, type: 3}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: interactMissioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 389182e5c130e0944bc567bb27c383b1, type: 3}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: interactCanonadesClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e5179b721cc03b0488c7a475d0e33171, type: 3}
     - target: {fileID: 8904768628811023302, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10046,13 +10071,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
