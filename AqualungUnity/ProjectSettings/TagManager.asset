@@ -13,6 +13,8 @@ TagManager:
   - UI
   - LimitPantalla
   - PiscinaAigua
+  - VirtualCamera
+  - ImpacteEnemic
   layers:
   - Default
   - TransparentFX
