@@ -29,7 +29,7 @@ namespace Platformer.Gameplay
                     player.audioSource.PlayOneShot(player.ouchAudio);
                 player.animator.SetTrigger("hurt");
                 player.animator.SetBool("dead", true);
-
+                AudioManager.Instance.StopTrack();
 
                 /*Aquí hem afegit un canvi, ja que al template original, quan el jugador moria, aquest tornava a 
                  reviure, i apareixia en un punt concret de l'escena. En el nostre cas no és així, i el que fem 

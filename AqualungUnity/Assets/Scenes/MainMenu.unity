@@ -5266,13 +5266,18 @@ PrefabInstance:
     - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: fadeSpeed
-      value: 3.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: VictoryClip
       value: 
       objectReference: {fileID: 8300000, guid: 7f3363b5a9f79d74daa5a55fcc2a764d, type: 3}
+    - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
+        type: 3}
+      propertyPath: musicVolume
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1001308096955450229, guid: 46fb3de9dae37a54996adc83742b725f,
         type: 3}
       propertyPath: sliderMusic
@@ -6545,7 +6550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El cam\xED de l'aigua"
+  m_text: El cami de l'aigua
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7fbf7b95cb22ce94c87099c61662e76a, type: 2}
   m_sharedMaterial: {fileID: 5244245473156742880, guid: 7fbf7b95cb22ce94c87099c61662e76a,
