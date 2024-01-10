@@ -32,7 +32,7 @@ public class MovimentCamera : MonoBehaviour
     IEnumerator MouCamera()
     {
         _camInitPosition = _mainCamera.transform.position;
-        speed = 9f;
+        speed = 10f;
         _mainCamera.GetComponent<CinemachineBrain>().enabled = false;
 
         while (_mainCamera.transform.position != destiCamera.position)
@@ -41,7 +41,7 @@ public class MovimentCamera : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
 
         while (_mainCamera.transform.position != _camInitPosition)
         {

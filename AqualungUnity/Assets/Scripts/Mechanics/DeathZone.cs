@@ -19,6 +19,7 @@ namespace Platformer.Mechanics
 
         void OnTriggerEnter2D(Collider2D collider)
         {
+            AudioManager.Instance.StopTrack();
             _health = collider.gameObject.GetComponent<Health>();
             _health.Die();
         }
