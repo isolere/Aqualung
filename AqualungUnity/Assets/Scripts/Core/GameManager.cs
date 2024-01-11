@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour
     public static void LoadMainMenu()
     {
         Debug.Log("Pushing exit button from Pause menu");
+       // AudioManager.Instance.StopTrack();
+
         LoadLevel(Instance.mainMenu);
     }
 
@@ -112,6 +114,8 @@ public class GameManager : MonoBehaviour
     {
         if (OnLevelChange != null) OnLevelChange();
         yield return new WaitForSeconds(delay);
+        AudioManager.Instance.StopTrack();
+
         SceneManager.LoadScene(sceneName);
     }
     

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -133918340, guid: 253fc2f36abff2e478ee6870cee43138, type: 3}
-  m_Color: {r: 0.5471698, g: 0.46164292, b: 0.3794055, a: 1}
+  m_Color: {r: 0.6415094, g: 0.59970856, b: 0.5598077, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5947478647765610694}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine

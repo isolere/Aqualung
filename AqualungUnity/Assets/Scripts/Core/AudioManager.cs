@@ -139,10 +139,16 @@ public class AudioManager : MonoBehaviour
 
     public void StopTrack()
     {
-        _audioSource1.Stop();
-        _audioSource1.clip = null;
-        _audioSource2.Stop();
-        _audioSource2.clip = null;
+        if (_audioSource1 != null)
+        {
+            _audioSource1.Stop();
+            _audioSource1.clip = null;
+        }
+        if (_audioSource2 != null)
+        {
+            _audioSource2.Stop();
+            _audioSource2.clip = null;
+        }
     }
 
     public void PlayHoverClip()
